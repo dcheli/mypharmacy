@@ -1,0 +1,965 @@
+{ "name": "abacavir sulfate" }
+{ "name": "abacavir sulfate and lamivudine" }
+{ "name": "abacavir sulfate, lamivudine, and zidovudine)" }
+{ "name": "abacavir/dolutegravir/lamivudine" }
+{ "name": "abaloparatide" }
+{ "name": "abatacept" }
+{ "name": "abemaciclib" }
+{ "name": "abiraterone acetate" }
+{ "name": "abobotulinumtoxinA" }
+{ "name": "acalabrutinib" }
+{ "name": "acetohydroxamine acid" }
+{ "name": "acitretin" }
+{ "name": "aclidinium bromide inhalation powder" }
+{ "name": "adalimumab" }
+{ "name": "adapalene and benzoyl peroxinde" }
+{ "name": "adefovir dipivoxil" }
+{ "name": "adhesive remover" }
+{ "name": "ado-trastuzumab emtansine" }
+{ "name": "afatinib" }
+{ "name": "aflibercept" }
+{ "name": "agalsidase beta" }
+{ "name": "albendazole" }
+{ "name": "albiglutide" }
+{ "name": "albumin-bound paclitaxel" }
+{ "name": "albuterol" }
+{ "name": "albuterol hfa" }
+{ "name": "albuterol sulfate" }
+{ "name": "albuterol sulfate HFA inhalation aerosol" }
+{ "name": "alectinib" }
+{ "name": "alemtuzumab" }
+{ "name": "alglucosidase alfa" }
+{ "name": "alirocumab" }
+{ "name": "alogliptin" }
+{ "name": "alogliptin and metformin HCL" }
+{ "name": "alogliptin and pioglitazone" }
+{ "name": "alosetron HCL" }
+{ "name": "alpha1-proteinase inhibitor (human)" }
+{ "name": "alprazolam" }
+{ "name": "alprostadil" }
+{ "name": "alteplase" }
+{ "name": "aluminum chloride/anhydrous ethyl alcohol solution; topical" }
+{ "name": "alvimopan" }
+{ "name": "amantadine" }
+{ "name": "ambrisentan" }
+{ "name": "amlodipine besylate" }
+{ "name": "amlodipine besylate/atorvastatin calcium" }
+{ "name": "amphotericin b lipid complex" }
+{ "name": "amphotericin B, lipid-based" }
+{ "name": "amylase/lipase/pancrelipase/protease" }
+{ "name": "anagrelide hydrochloride" }
+{ "name": "anakinra" }
+{ "name": "anastrazole" }
+{ "name": "anidulafungin IV" }
+{ "name": "antihemophilic factor" }
+{ "name": "Antihemophilic Factor (Human) Factor VIII:C Pasteurized" }
+{ "name": "antihemophilic factor (recombinant)" }
+{ "name": "antihemophilic factor (recombinant) vial " }
+{ "name": "Antihemophilic Factor (Recombinant), PEGylated" }
+{ "name": "antihemophilic factor recombinant fc fusion protein" }
+{ "name": "antihemophilic factor/von willebrand factor complex (human)" }
+{ "name": "antihypertensive combinations" }
+{ "name": "apalutamide" }
+{ "name": "apixaban" }
+{ "name": "apremilast" }
+{ "name": "aprepitant" }
+{ "name": "aralast" }
+{ "name": "aripiprazole" }
+{ "name": "aripiprazole lauroxil" }
+{ "name": "armodafinil" }
+{ "name": "arsenic trioxide" }
+{ "name": "artmether and lumefantrine tablets" }
+{ "name": "asenapine maleate" }
+{ "name": "asfotase alfa injection" }
+{ "name": "asparaginase erwinia chrysanthemi" }
+{ "name": "atazanavir sulfate" }
+{ "name": "atazanavir/cobicistat" }
+{ "name": "atezolizumab" }
+{ "name": "atomoxetine hcl" }
+{ "name": "atorvastatin calcium" }
+{ "name": "atovaquone" }
+{ "name": "atovaquone and proguanil hcl" }
+{ "name": "auranofin" }
+{ "name": "axitinib" }
+{ "name": "azacitidine" }
+{ "name": "azelaic acid" }
+{ "name": "azelastine/fluticasone propionate" }
+{ "name": "azilartan medoxomil/chlorthalidone" }
+{ "name": "azilsartan medoxomil" }
+{ "name": "azithromycin" }
+{ "name": "azithromycin extended release" }
+{ "name": "aztreonam for inhalation solution" }
+{ "name": "bacitracin" }
+{ "name": "baclofen injectable; intrathecal" }
+{ "name": "balsalazide" }
+{ "name": "beclomethasone dipropionate" }
+{ "name": "beclomethasone dipropionate hfa" }
+{ "name": "bedaquiline" }
+{ "name": "belatacept" }
+{ "name": "belimumab" }
+{ "name": "belinostat" }
+{ "name": "bendamustine HCl" }
+{ "name": "benralizumab" }
+{ "name": "benzonatate" }
+{ "name": "bepotastine besilate" }
+{ "name": "besifloxacin ophthalmic suspension" }
+{ "name": "betaine anhydrous" }
+{ "name": "betaxolol hydrochloride suspension" }
+{ "name": "bevacizumab" }
+{ "name": "bexarotene" }
+{ "name": "bezlotoxumab" }
+{ "name": "bi-layered skin substitute" }
+{ "name": "bimatoprost ophthalmic solution" }
+{ "name": "bismuth subcitrate potassuim, metronidazole, tetracycline HCI" }
+{ "name": "blinatumomab" }
+{ "name": "blood glucose monitor" }
+{ "name": "blood glucose strips" }
+{ "name": "bortezomib" }
+{ "name": "bosentan" }
+{ "name": "bosutinib" }
+{ "name": "botulinum toxin type A" }
+{ "name": "brentuximab vedotin" }
+{ "name": "brexpiprazole tablet" }
+{ "name": "brimonidine" }
+{ "name": "brimonidine tartrate ophthalmic solution" }
+{ "name": "brimonidine tartrate/timolol maleate opthalmic solution" }
+{ "name": "brinzolamide suspension" }
+{ "name": "brinzolamide/brimonidine tartrate suspension" }
+{ "name": "brivaracetam" }
+{ "name": "brodalumab" }
+{ "name": "bromfenac sodium solution" }
+{ "name": "bromocriptine mesylate tablets" }
+{ "name": "budesonide" }
+{ "name": "budesonide inhalation powder" }
+{ "name": "budesonide/formoterol fumarate dihydrate" }
+{ "name": "buprenorphine" }
+{ "name": "buprenorphine and naloxone" }
+{ "name": "buprenorphine and naloxone film; sublingual" }
+{ "name": "buprenorphine/naloxone" }
+{ "name": "bupropion" }
+{ "name": "c1 esterase inhibito" }
+{ "name": "c1 esterase inhibitor" }
+{ "name": "cabazitaxel" }
+{ "name": "cabozantinib s-malate" }
+{ "name": "calcifediol" }
+{ "name": "calcipotriene/betamethasone/dipropionate" }
+{ "name": "calcitonin-salmon" }
+{ "name": "calcium acetate" }
+{ "name": "canagliflozin" }
+{ "name": "canagliflozin/metformin HCI" }
+{ "name": "canagliflozin-metformin" }
+{ "name": "canakinumab" }
+{ "name": "capsaicin" }
+{ "name": "carbamazepine" }
+{ "name": "carbamazepine extended release" }
+{ "name": "carbidopa" }
+{ "name": "carbidopa/levodopa" }
+{ "name": "carboprost tromethamine,USP" }
+{ "name": "carfilzomib" }
+{ "name": "carglumic acid" }
+{ "name": "cariprazine" }
+{ "name": "carvedilol phosphate extended release capsules" }
+{ "name": "caspofungin acetate" }
+{ "name": "ceftaroline" }
+{ "name": "ceftazidime/avibactam" }
+{ "name": "ceftolozane/tazobactam" }
+{ "name": "celecoxib" }
+{ "name": "ceritinib" }
+{ "name": "cerliponase alpa" }
+{ "name": "certolizumab pegol" }
+{ "name": "cetrorelix acetate" }
+{ "name": "cetuximab" }
+{ "name": "chlorthalidone tablets, USP" }
+{ "name": "cholic acid capsule" }
+{ "name": "choriogonadotropin alfa" }
+{ "name": "chorionic gonadotropin" }
+{ "name": "ciclesonide" }
+{ "name": "cinacalcet HCl" }
+{ "name": "ciprofloxacin" }
+{ "name": "ciprofloxacin and dexamethasone " }
+{ "name": "ciprofloxacin hydrochloride and hydrocortisone suspension" }
+{ "name": "clinclamycin phosphate gel" }
+{ "name": "clindamycin phosphate" }
+{ "name": "clindamycin phosphate and benzoyl peroxide" }
+{ "name": "clindamycin phosphate/benzoyl peroxide" }
+{ "name": "clobazam" }
+{ "name": "clofarabine injection" }
+{ "name": "clomipramine hcl" }
+{ "name": "clorazepate dipotassium" }
+{ "name": "clotrimazole & betamethasone diproprionate" }
+{ "name": "clotrimazole/betamethasone cream" }
+{ "name": "clozapine" }
+{ "name": "coagulant complex inhibitor" }
+{ "name": "coagulation factor ix (human)" }
+{ "name": "coagulation factor IX (rDNA)" }
+{ "name": "coagulation factor IX (recombinant)" }
+{ "name": "coagulation factor IX (recombinant), albumin fusion protein " }
+{ "name": "coagulation factor viia (recombinant)" }
+{ "name": "coagulation factor Xlll A-Subunit (rDNA)" }
+{ "name": "cobicistat" }
+{ "name": "cobimetinib" }
+{ "name": "colchicine" }
+{ "name": "colesevelam HCI" }
+{ "name": "colestipol hcl" }
+{ "name": "collagenase clostridium histolyticum" }
+{ "name": "compleat" }
+{ "name": "compleat pediatric" }
+{ "name": "conjugated estrogens" }
+{ "name": "conjugated estrogens/bazedoxifene" }
+{ "name": "conjugated estrogens/medroxyprogesterone acetate tablets" }
+{ "name": "conjugated estrogens; medroxyprogesterone acetate" }
+{ "name": "copanlisib" }
+{ "name": "corticotropin (ACTH)" }
+{ "name": "crizotinib" }
+{ "name": "crofelemer" }
+{ "name": "cyanocobalamin" }
+{ "name": "Cyclobenzaprine" }
+{ "name": "cyclopentolate hydrochloride solution, USP" }
+{ "name": "cyclosporine" }
+{ "name": "cyclosporine capsules, USP modified" }
+{ "name": "cysteamine" }
+{ "name": "cysteamine bitartrate delayed-release capsule" }
+{ "name": "cytarabine liposome" }
+{ "name": "dabigatran etexilate" }
+{ "name": "dabrafenib" }
+{ "name": "daclatasvir" }
+{ "name": "dactinomycin injectable" }
+{ "name": "dalbavancin" }
+{ "name": "dalteparin sodium" }
+{ "name": "dapagliflozin" }
+{ "name": "dapagliflozin/metformin" }
+{ "name": "dapsone" }
+{ "name": "daptomycin" }
+{ "name": "daratumumab" }
+{ "name": "darbepoetin alfa" }
+{ "name": "darunavir" }
+{ "name": "darunavir, cobicistat, emtricitabine, and tenofovir alafenamide" }
+{ "name": "darunavir/cobicistat" }
+{ "name": "dasabuvir, ombitasvir, paritaprevir, and ritonavir" }
+{ "name": "dasatinib" }
+{ "name": "daunorubicin/cytarabine" }
+{ "name": "deferasirox" }
+{ "name": "Defibrotide sodium" }
+{ "name": "deflazacort" }
+{ "name": "delafloixacin" }
+{ "name": "delavirdine mesylate" }
+{ "name": "denosumab" }
+{ "name": "dermagraft" }
+{ "name": "desmopressin acetate" }
+{ "name": "desonide" }
+{ "name": "desvenlafaxine" }
+{ "name": "deutetrabenazine" }
+{ "name": "dexamethasone" }
+{ "name": "dexamethasone suspension" }
+{ "name": "dexlansoprazole" }
+{ "name": "dexmethylphenidate hcl" }
+{ "name": "dextrazoxane" }
+{ "name": "dextromethorphan hydrobromide and quinidine sulfate" }
+{ "name": "diabetisource AC" }
+{ "name": "diazoxide" }
+{ "name": "diclofenac epolamine topical patch" }
+{ "name": "diclofenac sodium solution; topical" }
+{ "name": "diclofenac sodium/misoprostol" }
+{ "name": "difluprednate emulsion" }
+{ "name": "dimethyl fumarate" }
+{ "name": "diphenoxylate hydrochloride/atropine sulfate" }
+{ "name": "disopyramide" }
+{ "name": "divalproex Na Tabs" }
+{ "name": "divalproex sodium extended release tablets" }
+{ "name": "docusate sodium" }
+{ "name": "dofetilide" }
+{ "name": "dolutegravir" }
+{ "name": "dornase alfa recombinant inhalation solution" }
+{ "name": "dorzolamide HCL" }
+{ "name": "doxazosin mesylate" }
+{ "name": "doxorubicin HCL liposome injection" }
+{ "name": "doxycycline" }
+{ "name": "doxylamine succinate/pyridoxine hydrochloride" }
+{ "name": "dronabinol" }
+{ "name": "dronedarone tablets" }
+{ "name": "drospirenon/ethinyl estradiol/levomefolate calcium" }
+{ "name": "drospirenone & ethinyl estradiol" }
+{ "name": "drospirenone/estradiol" }
+{ "name": "drospirenone/ethinyl estradiol tablets" }
+{ "name": "drospirenone/ethinyl estradiol/levomefolate calcium" }
+{ "name": "droxidopa" }
+{ "name": "dulaglutide" }
+{ "name": "duloxetine hcl" }
+{ "name": "durvalumab" }
+{ "name": "dutasteride and tamsulosin hydrochloride" }
+{ "name": "ecallantide" }
+{ "name": "echothiophate iodide" }
+{ "name": "eculizumab" }
+{ "name": "edoxaban tablet" }
+{ "name": "efavirenx/emtricitabine/tenofovir disoproxil fumarate" }
+{ "name": "efavirenz" }
+{ "name": "efinaconazole" }
+{ "name": "elbasvir/grazoprevir" }
+{ "name": "eletriptan HBr" }
+{ "name": "eliglustat" }
+{ "name": "elotuzumab" }
+{ "name": "eltrombopag" }
+{ "name": "eluxadoline" }
+{ "name": "elvitegravir tablets" }
+{ "name": "elvitegravir/cobicistat/emtricitabine/tenofovir alafenamide" }
+{ "name": "elvitegravir/cobicistat/emtricitabine/tenofovir disoproxil fumarate" }
+{ "name": "emedastine difumarate solution" }
+{ "name": "empagliflozin" }
+{ "name": "empagliflozin/linagliptin" }
+{ "name": "empagliflozin/metformin hydrochloride" }
+{ "name": "emtricitabine" }
+{ "name": "emtricitabine oral solution" }
+{ "name": "emtricitabine/rilpivirine/tenofovir alafenamide" }
+{ "name": "emtricitabine/rilpivirine/tenofovir disoproxil fumarate" }
+{ "name": "emtricitabine/tenofovir alafenamide" }
+{ "name": "enasidenib" }
+{ "name": "enoxaparin sodium" }
+{ "name": "entecavir" }
+{ "name": "enzalutamide" }
+{ "name": "epinephrine" }
+{ "name": "epinephrine auto injector" }
+{ "name": "epinephrine injection" }
+{ "name": "epirubicin hcl" }
+{ "name": "eplerenone" }
+{ "name": "epoetin alfa" }
+{ "name": "epoprostenol" }
+{ "name": "erenumab" }
+{ "name": "eribulin mesylate" }
+{ "name": "erlotinib" }
+{ "name": "ertapenem" }
+{ "name": "erythromycin" }
+{ "name": "erythromycin ethylsuccinate for oral suspension" }
+{ "name": "erythromycin ethylsuccinate granule; oral " }
+{ "name": "eslicarbazepine acetate" }
+{ "name": "esterified estrogens" }
+{ "name": "estradiol transdermal system" }
+{ "name": "estradiol vaginal cream" }
+{ "name": "estradiol vaginal ring" }
+{ "name": "estradiol valerate and estradiol valerate/dienogest" }
+{ "name": "estradiol/levonorgestrel transdermal system" }
+{ "name": "estramustine phosphate sodium" }
+{ "name": "estrodiol cypionate in oil" }
+{ "name": "estrogens and progestins" }
+{ "name": "etanercept" }
+{ "name": "etelcalcetide" }
+{ "name": "ethionamide" }
+{ "name": "ethosuximide" }
+{ "name": "ethotoin" }
+{ "name": "etoposide phosphate" }
+{ "name": "etravirine" }
+{ "name": "everolimus" }
+{ "name": "evolocumab" }
+{ "name": "exemestane" }
+{ "name": "exenatide" }
+{ "name": "exenatide extended-release for injection suspension" }
+{ "name": "ezetimibe" }
+{ "name": "ezetimibe/simvastatin" }
+{ "name": "factor ix" }
+{ "name": "factor IX complex" }
+{ "name": "factor xiii concentrate (human)" }
+{ "name": "famciclovir tablet" }
+{ "name": "febuxostat" }
+{ "name": "felbamate" }
+{ "name": "fentanyl buccal" }
+{ "name": "fentanyl spray" }
+{ "name": "ferric carboxymaltose" }
+{ "name": "ferric citrate)" }
+{ "name": "fesoterodine fumarate" }
+{ "name": "fexofenadine OTC tablet" }
+{ "name": "fibrinogen concentrate (human)" }
+{ "name": "filgrastim" }
+{ "name": "filgrastim-sndz" }
+{ "name": "fingolimod" }
+{ "name": "fluconazole" }
+{ "name": "flucytosine" }
+{ "name": "fludrocortisone acetate" }
+{ "name": "fluocinolone acetonide  intravitreal implant" }
+{ "name": "fluocinolone acetonide implant" }
+{ "name": "fluorometholone acetate suspension" }
+{ "name": "fluorouracil cream" }
+{ "name": "fluoxetine HCL" }
+{ "name": "fluticasone furoate and vilanterol inhalation powder" }
+{ "name": "fluticasone furoate inhalation powder" }
+{ "name": "fluticasone furoate, umeclidinium " }
+{ "name": "fluticasone propionate and salmeterol" }
+{ "name": "fluticasone propionate inhalation aerosol" }
+{ "name": "fluticasone propionate inhalation power" }
+{ "name": "follintropin alpha" }
+{ "name": "formoterol fumarate" }
+{ "name": "fosamprenavir calcium" }
+{ "name": "fosaprepitant dimeglumine" }
+{ "name": "fosfomycin" }
+{ "name": "fostamatinib disodium hexahydrate" }
+{ "name": "frovatriptan succinate" }
+{ "name": "fulvestrant" }
+{ "name": "gabapentin" }
+{ "name": "gabapentin enacarbil" }
+{ "name": "gammahydroxybutyrate" }
+{ "name": "ganciclovir ophthalmic gel" }
+{ "name": "gefitinib" }
+{ "name": "gemfibrozil" }
+{ "name": "gemtuzumab" }
+{ "name": "glatiramer acetate" }
+{ "name": "glatiramer acetate injection" }
+{ "name": "glipizide" }
+{ "name": "glucagon" }
+{ "name": "glucagon (rDNA) for injection" }
+{ "name": "glucose meter" }
+{ "name": "glucose test strips" }
+{ "name": "glycerol phenylbutyrate" }
+{ "name": "glycopyrrolate" }
+{ "name": "glycopyrrolate and formoterol fumarate" }
+{ "name": "glytrol" }
+{ "name": "golimumab" }
+{ "name": "Granisetron Transdermal System" }
+{ "name": "guanfacine" }
+{ "name": "guselkumab" }
+{ "name": "haloperidol" }
+{ "name": "haloperidol injection" }
+{ "name": "hemin" }
+{ "name": "hepatitis A vaccine, inactivated" }
+{ "name": "hepatitis B vaccine (recombinant)" }
+{ "name": "high molecular weight viscoelastic hyaluronan" }
+{ "name": "histrelin acetate; subcutaneous implant" }
+{ "name": "human insulin lispro (rDNA)" }
+{ "name": "human papillomavirus 9valent recombinant" }
+{ "name": "hyaluronan" }
+{ "name": "hyaluronate sodium" }
+{ "name": "hyaluronic acid derivatives" }
+{ "name": "hydrocodone bitartrate" }
+{ "name": "hydrocortisone acetate rectal suppositories, 30 mg" }
+{ "name": "hydrocortisone butyrate" }
+{ "name": "hydrocortisone cream" }
+{ "name": "hydrocortisone cream USP, 1%" }
+{ "name": "hydrocortisone cypionate" }
+{ "name": "hydrocortisone/iodoquinol cream" }
+{ "name": "hydrocortisone/pramoxine" }
+{ "name": "hydromorphine" }
+{ "name": "hydroquinone" }
+{ "name": "hydroquinone cream " }
+{ "name": "hydroxyprogesterone caproate" }
+{ "name": "hydroxypropyl cellulose opthalmic insert" }
+{ "name": "hydroxyurea" }
+{ "name": "hydroxyzine pamoate" }
+{ "name": "hylan G-F 20" }
+{ "name": "ibritumomab tiuxetan" }
+{ "name": "ibrutinib" }
+{ "name": "ibuprofen lysine" }
+{ "name": "ibuprofen/famotidine" }
+{ "name": "ibutilide fumarate" }
+{ "name": "icatibant" }
+{ "name": "icosapent ethyl" }
+{ "name": "idarubicin hcl" }
+{ "name": "idelalisib" }
+{ "name": "idsulfase" }
+{ "name": "iloperidone" }
+{ "name": "iloprost" }
+{ "name": "imatinib mesylate" }
+{ "name": "imiglucerase" }
+{ "name": "imipramine" }
+{ "name": "imiquimod" }
+{ "name": "immobilized lipase cartridge" }
+{ "name": "immune globulin infusion human with recombinant human hyaluronidase" }
+{ "name": "immune globulin intravenous (human)" }
+{ "name": "immune globulin iv (human)" }
+{ "name": "Immune Globulin Subcutaneous (Human)" }
+{ "name": "immune globulin; intravenous" }
+{ "name": "immune globulin; intravenous iv  " }
+{ "name": "impact peptide 1.5" }
+{ "name": "impenem-cilastatin" }
+{ "name": "incobotulinumtoxinA" }
+{ "name": "indacaterol/glycopyrrolate" }
+{ "name": "indaceterol" }
+{ "name": "indinavir sulfate" }
+{ "name": "infant formula" }
+{ "name": "infed" }
+{ "name": "infliximab" }
+{ "name": "infliximab-ABDA" }
+{ "name": "infliximab-dyyb" }
+{ "name": "ingenol mebutate" }
+{ "name": "inhaler spacer" }
+{ "name": "inotuzumab ozogamicin" }
+{ "name": "insulin (human), inhalation powder" }
+{ "name": "insulin (rDNA)" }
+{ "name": "insulin analog injection" }
+{ "name": "insulin delivery device" }
+{ "name": "insulin detemir (rDNA) injection" }
+{ "name": "insulin glargine" }
+{ "name": "insulin glargine " }
+{ "name": "insulin glargine (rDNA origin) injection" }
+{ "name": "insulin glargine injection" }
+{ "name": "insulin glulisine" }
+{ "name": "insulin lispro injection" }
+{ "name": "insulin lispro injection (rDNA)" }
+{ "name": "Insulin Syringes" }
+{ "name": "interferon beta-1a" }
+{ "name": "interferon beta-1b" }
+{ "name": "interferon gamma-1b" }
+{ "name": "ipilimumab" }
+{ "name": "ipratropium bromide" }
+{ "name": "ipratropium bromide; albuterol sulfate" }
+{ "name": "irinotecan hcl" }
+{ "name": "irinotecan liposome" }
+{ "name": "iron sucrose" }
+{ "name": "isavuconazonium sulfate" }
+{ "name": "isocarboxazid" }
+{ "name": "isophane human insulin (rDNA); human insulin (rDNA)" }
+{ "name": "isosorbide dinitrate and hydralazine hydrochloride" }
+{ "name": "itraconazole" }
+{ "name": "ivabradine" }
+{ "name": "ivacaftor" }
+{ "name": "Ivermectin" }
+{ "name": "ivermectin cream" }
+{ "name": "ixabepilone" }
+{ "name": "ixazomib" }
+{ "name": "ixekizumab" }
+{ "name": "ketorolac tromethamine ophthalmic solution" }
+{ "name": "lacosamide" }
+{ "name": "lactulose" }
+{ "name": "lamivudine" }
+{ "name": "lamivudine oral solution" }
+{ "name": "lamivudine/ziovudine tablets" }
+{ "name": "lamotrigine" }
+{ "name": "lancets" }
+{ "name": "lanreotide acetate" }
+{ "name": "lansoprazole" }
+{ "name": "lanthanum carbonate" }
+{ "name": "lapatinib tablets" }
+{ "name": "laronidase" }
+{ "name": "latanoprost solution" }
+{ "name": "latanoprostene bunod ophthalmic solution" }
+{ "name": "ledipasvir/sofosbuvir" }
+{ "name": "lenalidomide" }
+{ "name": "lenvatinib" }
+{ "name": "lesinurad" }
+{ "name": "lesinurad and allopurinol" }
+{ "name": "leuprolide acetate" }
+{ "name": "leuprolide acetate for depot supspension" }
+{ "name": "leuprolide acetate/norethindrone acetate" }
+{ "name": "levocarnitine (L-Carnitine)" }
+{ "name": "levoleucovorin" }
+{ "name": "levoleucovorin injection" }
+{ "name": "levomilnacipran" }
+{ "name": "levonorgestrel" }
+{ "name": "levonorgestrel-releasing intrauterine system" }
+{ "name": "levothyroxine" }
+{ "name": "levothyroxine sodium tablets, USP" }
+{ "name": "lidocaine topical" }
+{ "name": "lifitegrast ophthalmic solution)" }
+{ "name": "linaclotide" }
+{ "name": "linagliptin" }
+{ "name": "linagliptin and metformin hydrochloride extended-release" }
+{ "name": "linagliptin/metformin HCI" }
+{ "name": "lincomycin" }
+{ "name": "linezolid" }
+{ "name": "liothyronine sodium" }
+{ "name": "liquid adhesive" }
+{ "name": "liraglutide (rDNA) injection" }
+{ "name": "lisdexamfetamine dimesylate capsules" }
+{ "name": "lixisenatide" }
+{ "name": "lodoxamide tromethamine solution" }
+{ "name": "lopinavir/ritonavir capsules" }
+{ "name": "lopinavir/ritonavir oral solution" }
+{ "name": "loracarbef" }
+{ "name": "lorcaserin hydrochloride" }
+{ "name": "loteprednol etabonate and tobramycin ophthalmic suspension" }
+{ "name": "loteprednol etabonate ophthalmic" }
+{ "name": "loteprednol etabonate ophthalmic suspension" }
+{ "name": "lubiprostone" }
+{ "name": "luliconazole" }
+{ "name": "lumacaftor/ivacaftor" }
+{ "name": "lurasidone HCI" }
+{ "name": "lymphocyte immune globulin/anti-thymocyte globulin" }
+{ "name": "lyophilized extracellular matrix" }
+{ "name": "macitentan" }
+{ "name": "maraviroc" }
+{ "name": "measles, mumps, and rubella virus vaccine live" }
+{ "name": "mebendazole" }
+{ "name": "mecasermin" }
+{ "name": "mechlorethamine injectable" }
+{ "name": "medroxyprogesterone acetate" }
+{ "name": "medroxyprogesterone contraceptive injection" }
+{ "name": "memantine" }
+{ "name": "memantine hcl" }
+{ "name": "memantine hydrochloride extended-_release and donepezil _hydrochloride" }
+{ "name": "Meningococcal Group B Vaccine" }
+{ "name": "meningococcal polysaccharide vaccine" }
+{ "name": "menotropins" }
+{ "name": "mepolizumab" }
+{ "name": "mesalamine" }
+{ "name": "mesalamine extended release" }
+{ "name": "metaxalone" }
+{ "name": "methamphetamine hydrochloride" }
+{ "name": "Methenamine, Sodium Phosphate Monobasic, Phenyl Salicylate, Methylene Blue, Hyoscyamine Sulfate" }
+{ "name": "methotrexate" }
+{ "name": "methoxsalen USP" }
+{ "name": "methsuximide" }
+{ "name": "methylnaltrexone bromide" }
+{ "name": "methylphenidate hydrochloride" }
+{ "name": "methylprednisolone" }
+{ "name": "methyltestosterone capsules" }
+{ "name": "methyphenidate HCI" }
+{ "name": "metronidazole" }
+{ "name": "metyrosine" }
+{ "name": "micafungin sodium" }
+{ "name": "micronized glyburide" }
+{ "name": "midostaurin capsule" }
+{ "name": "mifepristone" }
+{ "name": "miglitol" }
+{ "name": "miglustat" }
+{ "name": "milnaciprab" }
+{ "name": "milnacipran HCl tablets" }
+{ "name": "minocycline" }
+{ "name": "minocycline HCI" }
+{ "name": "mirabegron" }
+{ "name": "misoprostol" }
+{ "name": "mitotane" }
+{ "name": "mometasone furoate" }
+{ "name": "mometasone furoate inhalation powder" }
+{ "name": "mometasone furoate/formoterol fumarate dihydrate" }
+{ "name": "montelukast sodium" }
+{ "name": "morphine sulfate and naltrexone hydrochloride" }
+{ "name": "moxifloxacin hydrochloride solution" }
+{ "name": "mucadhesive" }
+{ "name": "multivitamin/mineral" }
+{ "name": "mycophenolate mofetil" }
+{ "name": "mycophenolic acid" }
+{ "name": "nadolol" }
+{ "name": "nafarelin acetate" }
+{ "name": "naloxegol oxalate" }
+{ "name": "naloxone hcl injection" }
+{ "name": "naltrexone for extended-release injectable suspension" }
+{ "name": "nanofiltered immune globulin intravenous (human)" }
+{ "name": "naproxen and esomeprazole magnesium" }
+{ "name": "natalizumab" }
+{ "name": "nebivolol" }
+{ "name": "necitumumab" }
+{ "name": "nedocromil sodium" }
+{ "name": "nelarabine" }
+{ "name": "nelfinavir mesylate" }
+{ "name": "Neocate Powdered Formula" }
+{ "name": "nepafenac suspension" }
+{ "name": "netupitant/palonosetron capsule" }
+{ "name": "nevirapine" }
+{ "name": "nicotine" }
+{ "name": "nifedipine" }
+{ "name": "nifedipine extended release" }
+{ "name": "nilotinib" }
+{ "name": "nintedanib" }
+{ "name": "niraparib" }
+{ "name": "nitazoxanide" }
+{ "name": "nitisinone" }
+{ "name": "nitroglycerin" }
+{ "name": "nivolumab" }
+{ "name": "norethindrone acetate tablet" }
+{ "name": "nortriptyline" }
+{ "name": "NPH human insulin (rDNA)" }
+{ "name": "nutren 1.0 with fiber" }
+{ "name": "nutren 1.5" }
+{ "name": "nutren junior" }
+{ "name": "nutren junior fiber" }
+{ "name": "nutrition supplement" }
+{ "name": "nutritional supplement" }
+{ "name": "obinutuzumab" }
+{ "name": "ocrelizumab" }
+{ "name": "ocriplasmin" }
+{ "name": "octreotide acetate" }
+{ "name": "ofatumumab " }
+{ "name": "olanzapine" }
+{ "name": "olanzapine and fluoxetine hcl" }
+{ "name": "olaparib" }
+{ "name": "olaratumab injection" }
+{ "name": "olodaterol" }
+{ "name": "olopatadine hydrochloride solution" }
+{ "name": "omacetaxine mepesuccinate" }
+{ "name": "omalizumab" }
+{ "name": "ombitasvir, paritaprevir and ritonavir" }
+{ "name": "ombitasvir/paritaprevir/ritonavir/dasabuvir" }
+{ "name": "oritavancin" }
+{ "name": "osimertinib" }
+{ "name": "oxaprozin" }
+{ "name": "oxcarbazepine" }
+{ "name": "oxybutynin chloride" }
+{ "name": "oxycodone" }
+{ "name": "Oxycodone HCI/Acetaminophen" }
+{ "name": "palbociclib" }
+{ "name": "palifermin" }
+{ "name": "paliperidone palmitate" }
+{ "name": "palivizumab" }
+{ "name": "pancrelipase" }
+{ "name": "panitumumab" }
+{ "name": "panobinostat" }
+{ "name": "pantoprazole sodium" }
+{ "name": "parathyroid hormone" }
+{ "name": "paroxetine" }
+{ "name": "Pasireotide" }
+{ "name": "patiromer" }
+{ "name": "pazopanib" }
+{ "name": "pegademase bovine" }
+{ "name": "pegaptanb sodium" }
+{ "name": "pegfilgrastim" }
+{ "name": "peginterferon" }
+{ "name": "peginterferon alfa-2a" }
+{ "name": "peginterferon beta1a" }
+{ "name": "pegloticase" }
+{ "name": "pegvisomant" }
+{ "name": "pembrolizumab" }
+{ "name": "pemetrexed" }
+{ "name": "penicillamine" }
+{ "name": "penicillin G potassium" }
+{ "name": "pentosan polysulfate sodium" }
+{ "name": "peptamen" }
+{ "name": "peptamen 1.5" }
+{ "name": "peptamen junior" }
+{ "name": "peptamen junior fiber" }
+{ "name": "peptamen junior prebio" }
+{ "name": "peptamen prebio" }
+{ "name": "perampanel" }
+{ "name": "pertuzumab" }
+{ "name": "phenelzine sulfate" }
+{ "name": "phenytoin sodium capsule" }
+{ "name": "phytonadione" }
+{ "name": "pimavanserin" }
+{ "name": "pimecrolimus" }
+{ "name": "pimozide" }
+{ "name": "pirfenidone" }
+{ "name": "piroxicam" }
+{ "name": "pitavastatin" }
+{ "name": "plerixafor injection" }
+{ "name": "pneumococcal 13-valent conjugate vaccine [Diphtheria CRM197 Protein]" }
+{ "name": "pneumococcal vaccine polyvalent" }
+{ "name": "polifeprosan 20 with carmustine implant" }
+{ "name": "polyethylene glycol 3350, sodium sulfate, sodium chloride, potassium chloride, sodium ascorbate, and ascorbic acid for oral solution" }
+{ "name": "poly-L-lactic acid" }
+{ "name": "Polysaccharide Diphtheria Toxoid Conjugate Vaccine " }
+{ "name": "pomalidomide" }
+{ "name": "ponatinib" }
+{ "name": "porfimer sodium injection" }
+{ "name": "posaconazole" }
+{ "name": "potassium citrate" }
+{ "name": "potassium p-aminobenzoate" }
+{ "name": "pralatrexate injection" }
+{ "name": "pramlintide acetate" }
+{ "name": "prasugrel" }
+{ "name": "praziquantel" }
+{ "name": "prednisolone acetate" }
+{ "name": "prednisone" }
+{ "name": "pregabalin" }
+{ "name": "Prenatal Vitamin" }
+{ "name": "Prenatal Vitamin   DHA" }
+{ "name": "procainamide HCI extended-release tablets" }
+{ "name": "procarbazine HCL" }
+{ "name": "procyclidine HCL" }
+{ "name": "progesterone gel" }
+{ "name": "propafenone hydrochloride" }
+{ "name": "propranolol hydrochloride" }
+{ "name": "pyrimethamine" }
+{ "name": "quinapril HCI" }
+{ "name": "quinapril/HCTZ tablet" }
+{ "name": "rabies immune globulin" }
+{ "name": "rabies vaccine" }
+{ "name": "radium Ra 223 dichloride" }
+{ "name": "raloxifene tablet" }
+{ "name": "raltegravir" }
+{ "name": "ramelteon" }
+{ "name": "ramipril" }
+{ "name": "ramucirumab injection" }
+{ "name": "ranibizumab injection" }
+{ "name": "ranolazine extended-release tablets" }
+{ "name": "rasburicase" }
+{ "name": "recominant" }
+{ "name": "regadenoson injection" }
+{ "name": "regorafenib" }
+{ "name": "Regular human insulin (rDNA)" }
+{ "name": "regular insulin human [rDNA Origin]" }
+{ "name": "regular, human insulin injection (rDNA)" }
+{ "name": "reslizumab" }
+{ "name": "ribavirin" }
+{ "name": "ribociclib" }
+{ "name": "ribociclib and letrozole" }
+{ "name": "rifabutin" }
+{ "name": "rifapentine tablets" }
+{ "name": "rifaximin" }
+{ "name": "rilpivirne" }
+{ "name": "rimabotulinumtoxinB" }
+{ "name": "riociguat" }
+{ "name": "risperidone" }
+{ "name": "ritonavir oral solution" }
+{ "name": "ritonavir soft gelatin capsules" }
+{ "name": "ritonavir tablets" }
+{ "name": "rituximab" }
+{ "name": "rituximab/hyaluronidase human" }
+{ "name": "rivaroxaban tablets" }
+{ "name": "rizatriptan benzoate" }
+{ "name": "roflumilast" }
+{ "name": "rolapitant tablet" }
+{ "name": "romidepsin" }
+{ "name": "romiplostim" }
+{ "name": "ropinirole extended-release tablets" }
+{ "name": "rosiglitazone maleate" }
+{ "name": "rotigotine" }
+{ "name": "rucaparib" }
+{ "name": "rufinamide" }
+{ "name": "ruxolitinib" }
+{ "name": "sacrosidase" }
+{ "name": "sacubitril/valsartan" }
+{ "name": "salmeterol xinafoate" }
+{ "name": "sapropterin dihydrochloride" }
+{ "name": "sargramostim" }
+{ "name": "sarilumab" }
+{ "name": "saxagliptin" }
+{ "name": "saxagliptin/metformin hcl extended-release" }
+{ "name": "sebelipase alfa" }
+{ "name": "secukinumab" }
+{ "name": "selegiline HCI" }
+{ "name": "selegiline transdermal" }
+{ "name": "selexipag" }
+{ "name": "sertraline HCI" }
+{ "name": "sildenafil citrate tablet" }
+{ "name": "sildenefil citrate" }
+{ "name": "silodosin" }
+{ "name": "Silsoft Contact Lenses" }
+{ "name": "siltuximab" }
+{ "name": "sipuleucel-t" }
+{ "name": "sirolimus" }
+{ "name": "sitagliptin phosphate" }
+{ "name": "sitagliptin/metformia HCI extended -release" }
+{ "name": "sitagliptin/metformin HCL" }
+{ "name": "sodium hyaluronate" }
+{ "name": "sodium injection" }
+{ "name": "sodium phenylbutyrate" }
+{ "name": "sofosbuvir" }
+{ "name": "sofosbuvir, velpatasvir, and voxilaprevir" }
+{ "name": "sofosbuvir/velpatasvir tablet" }
+{ "name": "solifenacin succinate" }
+{ "name": "somatropin" }
+{ "name": "somatropin (rDNA origin)" }
+{ "name": "somatropin (rDNA origin) injection" }
+{ "name": "somatropin (rDNA)" }
+{ "name": "somatropin (rDNA) injection" }
+{ "name": "somatropin [rDNA origin] for injection" }
+{ "name": "sorafenib" }
+{ "name": "sotalol" }
+{ "name": "spironolactone" }
+{ "name": "spironolactone and hydrochlorothiazide" }
+{ "name": "sterile methylprednisolone acetate" }
+{ "name": "succimer" }
+{ "name": "sucroferric oxyhydroxide" }
+{ "name": "sulfasalazine" }
+{ "name": "sumatriptan" }
+{ "name": "sumatriptan succinate" }
+{ "name": "sunitinib malate" }
+{ "name": "suvorexant" }
+{ "name": "systane" }
+{ "name": "tacrolimus" }
+{ "name": "tacrolimus capsule" }
+{ "name": "tacrolimus extended-release tablets" }
+{ "name": "tadalafil" }
+{ "name": "talcapone" }
+{ "name": "talimogene laherparepvec" }
+{ "name": "tasimelteon capsule" }
+{ "name": "tazarotene" }
+{ "name": "tbo-filgrastim" }
+{ "name": "teduglutide" }
+{ "name": "telavancin" }
+{ "name": "telotristat ethyl" }
+{ "name": "temozolomide" }
+{ "name": "temsirolimus" }
+{ "name": "tenecteplase" }
+{ "name": "tenofovir alafenamide" }
+{ "name": "tenofovir disoproxil / emtricitabine" }
+{ "name": "tenofovir disoproxil fumarate" }
+{ "name": "teriflunomide" }
+{ "name": "teriparatide" }
+{ "name": "tesamorelin for injection" }
+{ "name": "testosterone cypionate" }
+{ "name": "testosterone gel" }
+{ "name": "tetanus and diptheria toxoids absorbed" }
+{ "name": "tetanus toxoid, reduced diphtheria toxoid and acellular pertussis vaccine" }
+{ "name": "tetanus toxoid, reduced diphtheria toxoid and acellular pertussis vaccine " }
+{ "name": "tetrabenazine" }
+{ "name": "thalidomide" }
+{ "name": "theophylline" }
+{ "name": "theophylline;guaifenesin" }
+{ "name": "thyroid" }
+{ "name": "thyrotropin alfa" }
+{ "name": "tiagabine HCI" }
+{ "name": "ticagrelor" }
+{ "name": "tigecycline" }
+{ "name": "timolol maleate opthalmic solution (.5%,.25%)" }
+{ "name": "tiopromin tablet" }
+{ "name": "tiotropium bromide" }
+{ "name": "tiotropium bromide and olodaterol" }
+{ "name": "tiotropium bromide inhalation powder" }
+{ "name": "tipranavir" }
+{ "name": "tobramycin" }
+{ "name": "tobramycin / dexamethasone suspension" }
+{ "name": "tobramycin and dexamethasone ointment" }
+{ "name": "tobramycin and dexamethasone suspension" }
+{ "name": "tobramycin inhalation powder" }
+{ "name": "tocilizumab" }
+{ "name": "tofacitinib citrate" }
+{ "name": "tolerex" }
+{ "name": "tolterodine tartrate" }
+{ "name": "tolterodine tartrate tablet" }
+{ "name": "tolvaptan" }
+{ "name": "topiramate" }
+{ "name": "topotecan" }
+{ "name": "topotecan HCl" }
+{ "name": "toremifene citrate" }
+{ "name": "trabectedin" }
+{ "name": "trametinib" }
+{ "name": "tranexamic acid" }
+{ "name": "trastuzumab" }
+{ "name": "travoprost solution" }
+{ "name": "treprostinil" }
+{ "name": "tretinoin" }
+{ "name": "tretinoin cream" }
+{ "name": "triamcinolone acetonide injectable suspension" }
+{ "name": "triazolam" }
+{ "name": "trientine hcl" }
+{ "name": "trifluridine and tipiracil" }
+{ "name": "trifluridine ophthalmic solution" }
+{ "name": "triptorelin pamoate for injectable suspension" }
+{ "name": "tumor treating fields" }
+{ "name": "typhoid vaccine live oral Ty21a capsule" }
+{ "name": "umeclidinium and vilanterol inhalation powder" }
+{ "name": "umeclidinium inhalation powder" }
+{ "name": "ustekinumab" }
+{ "name": "valbenazine" }
+{ "name": "valganciclovir" }
+{ "name": "vandetanib" }
+{ "name": "varenicline" }
+{ "name": "Varicella Virus vaccine live" }
+{ "name": "vedolizumab" }
+{ "name": "velaglucerase alfa" }
+{ "name": "vemurafenib" }
+{ "name": "venetoclax" }
+{ "name": "venlafaxine" }
+{ "name": "verapamil HCl" }
+{ "name": "verteporfin for injection" }
+{ "name": "vigabatrin" }
+{ "name": "vilazodone" }
+{ "name": "vinCRIStine sulfate" }
+{ "name": "vismodegib" }
+{ "name": "vitamin/mineral supplement" }
+{ "name": "vivonex pediatric" }
+{ "name": "vivonex plus" }
+{ "name": "vivonex RTF" }
+{ "name": "vivonex T.E.N." }
+{ "name": "von willebrand factor/coagulation factor Vlll complex (human) liquid" }
+{ "name": "voriconazole" }
+{ "name": "vorinostat" }
+{ "name": "vortioxetine" }
+{ "name": "wound matrix" }
+{ "name": "zaleplon" }
+{ "name": "zanamivir for inhalation" }
+{ "name": "ziconotide infusion" }
+{ "name": "zidovudine" }
+{ "name": "zinc acetate" }
+{ "name": "ziprasidone HCI" }
+{ "name": "ziv-afilibercep" }
+{ "name": "zoledronic acid" }
+{ "name": "zolendronic acid" }
+{ "name": "zolmitriptan" }
+{ "name": "Zoster vaccine live" }

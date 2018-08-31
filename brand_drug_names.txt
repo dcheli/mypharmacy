@@ -1,0 +1,1111 @@
+{ "name": "Abelcet" }
+{ "name": "Abilify" }
+{ "name": "Abilify Maintena injection" }
+{ "name": "Abraxane" }
+{ "name": "Acanya" }
+{ "name": "Accupril" }
+{ "name": "Accuretic" }
+{ "name": "Actemra" }
+{ "name": "Actimmune" }
+{ "name": "Activase" }
+{ "name": "Acuvail" }
+{ "name": "Aczone Gel 5%" }
+{ "name": "Adacel" }
+{ "name": "Adagen" }
+{ "name": "Adcetris" }
+{ "name": "Adcirca tablets" }
+{ "name": "Adempas Tablet" }
+{ "name": "Adlyxin" }
+{ "name": "Advair diskus 100/50" }
+{ "name": "Advair diskus 250/50" }
+{ "name": "Advair diskus 500/50" }
+{ "name": "Advair HFA" }
+{ "name": "Advate" }
+{ "name": "Adynovate" }
+{ "name": "Aerochamber" }
+{ "name": "Aerochamber Plus Flow-Vu mouthpiece/mask" }
+{ "name": "Afinitor" }
+{ "name": "Afinitor Disperz" }
+{ "name": "Afrezza" }
+{ "name": "Afstyla" }
+{ "name": "Agrylin" }
+{ "name": "Aimovig" }
+{ "name": "Akynzeo capsule" }
+{ "name": "Albenza tablets" }
+{ "name": "Aldactazide" }
+{ "name": "Aldactone" }
+{ "name": "Aldurazyme" }
+{ "name": "Alecensa" }
+{ "name": "Alfamino Infant" }
+{ "name": "Alfamino Junior" }
+{ "name": "Alimta" }
+{ "name": "Alinia tablets" }
+{ "name": "Aliqopa" }
+{ "name": "Allegra OTC" }
+{ "name": "Alomide" }
+{ "name": "Alphagan P 1%" }
+{ "name": "Alphanate injection" }
+{ "name": "AlphaNine SD" }
+{ "name": "Alphaquin HP cream" }
+{ "name": "Alprolix Powder" }
+{ "name": "Alrex suspension .2%" }
+{ "name": "Altace" }
+{ "name": "Alvesco" }
+{ "name": "AmBisome (injection)" }
+{ "name": "Amitiza" }
+{ "name": "Anafranil" }
+{ "name": "Analpram HC Cream " }
+{ "name": "Ancobon Caps" }
+{ "name": "AndroGel" }
+{ "name": "Android capsules" }
+{ "name": "Angeliq" }
+{ "name": "Anoro Ellipta" }
+{ "name": "Anusol-HC (cream)" }
+{ "name": "Apidra" }
+{ "name": "Apligraf" }
+{ "name": "Apriso" }
+{ "name": "Aptiom Tablet" }
+{ "name": "Aptivus capsules" }
+{ "name": "Aralast" }
+{ "name": "Aranesp" }
+{ "name": "Arcapta neohaler" }
+{ "name": "Arestin" }
+{ "name": "Arimidex" }
+{ "name": "Aristada" }
+{ "name": "Armour Thyroid" }
+{ "name": "Arnuity Ellipta" }
+{ "name": "Aromasin" }
+{ "name": "Arranon" }
+{ "name": "Arthrotec" }
+{ "name": "Arzerra" }
+{ "name": "Asmanex HFA" }
+{ "name": "Asmanex Twisthaler" }
+{ "name": "Astagraf XL" }
+{ "name": "Atgam" }
+{ "name": "Atripla" }
+{ "name": "Atrovent HFA Inhalation Aerosol" }
+{ "name": "Aubagio tablets" }
+{ "name": "Auryxia Tablet" }
+{ "name": "Austedo" }
+{ "name": "Auvi-Q" }
+{ "name": "Avandia tablets" }
+{ "name": "Avastin" }
+{ "name": "Avonex" }
+{ "name": "Avycaz Vials" }
+{ "name": "Aygestin" }
+{ "name": "Azopt" }
+{ "name": "Azulfidine" }
+{ "name": "Bacitracin" }
+{ "name": "Banzel" }
+{ "name": "Baraclude Oral Solution" }
+{ "name": "Baraclude tablets" }
+{ "name": "Basaglar" }
+{ "name": "Baxdela" }
+{ "name": "Bebulin" }
+{ "name": "Beconase AQ (nasal spray)" }
+{ "name": "Beleodaq Powder" }
+{ "name": "Belsomra" }
+{ "name": "Belviq tablet" }
+{ "name": "Bendeka Injection" }
+{ "name": "Benlysta" }
+{ "name": "Bepreve Ophthalmic Solution 1.5%" }
+{ "name": "Berinert" }
+{ "name": "Besivance" }
+{ "name": "Besponsa" }
+{ "name": "Betaseron" }
+{ "name": "Bethkis Inhalation Solution" }
+{ "name": "Betoptic S" }
+{ "name": "Bevespi Aerosphere" }
+{ "name": "Beyaz" }
+{ "name": "BiDil" }
+{ "name": "Biltricide" }
+{ "name": "Blincyto" }
+{ "name": "Boost Kid Essentials" }
+{ "name": "Boost Kid Essentials 1.5" }
+{ "name": "Boost Kid Essentials 1.5 Fiber" }
+{ "name": "Boost Original" }
+{ "name": "Boost Plus" }
+{ "name": "Boost VHC" }
+{ "name": "Boostrix" }
+{ "name": "Bosulif" }
+{ "name": "Botox" }
+{ "name": "Breo Ellipta" }
+{ "name": "Brilinta Tablets" }
+{ "name": "Brineura" }
+{ "name": "Brisdelle Capsule" }
+{ "name": "Briviact" }
+{ "name": "Buphenyl Powder " }
+{ "name": "Buphenyl Tablet" }
+{ "name": "Butrans Transdermal System" }
+{ "name": "Bydureon" }
+{ "name": "Byetta" }
+{ "name": "Bystolic" }
+{ "name": "Cabometyx" }
+{ "name": "Caduet" }
+{ "name": "Calan" }
+{ "name": "Calquence" }
+{ "name": "Campath 30mg" }
+{ "name": "Camptosar" }
+{ "name": "Canasa" }
+{ "name": "Cancidas" }
+{ "name": "Caprelsa" }
+{ "name": "Carac Cream" }
+{ "name": "Carbaglu" }
+{ "name": "Carbatrol" }
+{ "name": "Cardura" }
+{ "name": "Carimune NF" }
+{ "name": "Carnitor" }
+{ "name": "Cathflo" }
+{ "name": "Caverject" }
+{ "name": "Cayston" }
+{ "name": "Celebrex" }
+{ "name": "CellCept" }
+{ "name": "Celontin" }
+{ "name": "Cerdelga Capsule" }
+{ "name": "Cerezyme" }
+{ "name": "Cetrotide injection" }
+{ "name": "Chantix" }
+{ "name": "Chemet Capsules" }
+{ "name": "Cholbam capsule" }
+{ "name": "Cialis" }
+{ "name": "CIMZIA" }
+{ "name": "Cinqair" }
+{ "name": "Cinryze" }
+{ "name": "Cipro HC Otic" }
+{ "name": "Ciprodex" }
+{ "name": "Cleocin" }
+{ "name": "Cleocin Phosphate" }
+{ "name": "Climara Pro 0.045mg/.015mg" }
+{ "name": "Clindagel Topical Gel" }
+{ "name": "Clolar" }
+{ "name": "Clozapine" }
+{ "name": "Coartem" }
+{ "name": "Colazal" }
+{ "name": "Colcrys tablet " }
+{ "name": "Colestid" }
+{ "name": "Combigan" }
+{ "name": "Combivent Inhalation Aerosol" }
+{ "name": "Combivir tablets" }
+{ "name": "Compleat" }
+{ "name": "Compleat Pediatric" }
+{ "name": "Complera" }
+{ "name": "Concerta" }
+{ "name": "Copaxone" }
+{ "name": "Copegus" }
+{ "name": "Coreg CR " }
+{ "name": "Corgard" }
+{ "name": "Corifact" }
+{ "name": "Corlanor" }
+{ "name": "Cortef" }
+{ "name": "Corvert" }
+{ "name": "Corzide" }
+{ "name": "Cosentyx" }
+{ "name": "Cosmegen Injection" }
+{ "name": "Cotellic" }
+{ "name": "Creon Delayed-Release capsules" }
+{ "name": "Cresemba Capsule" }
+{ "name": "Cresemba Injection" }
+{ "name": "Crinone" }
+{ "name": "Crixivan" }
+{ "name": "Cubicin injection" }
+{ "name": "Cuprimine capsules" }
+{ "name": "Cuvitru" }
+{ "name": "Cyclogyl" }
+{ "name": "Cycloset tablet" }
+{ "name": "Cyklokapron" }
+{ "name": "Cymbalta" }
+{ "name": "Cyramza" }
+{ "name": "Cystadane" }
+{ "name": "Cystaran" }
+{ "name": "Cytomel" }
+{ "name": "Cytotec" }
+{ "name": "Cytra-K" }
+{ "name": "Daklinza" }
+{ "name": "Daliresp" }
+{ "name": "Dalvance Vials" }
+{ "name": "Daraprim tablet" }
+{ "name": "Darzalex" }
+{ "name": "Daypro" }
+{ "name": "Defitelio" }
+{ "name": "Delzicol DR Capsules" }
+{ "name": "Demser capsules" }
+{ "name": "Depakote" }
+{ "name": "Depakote ER Tablets" }
+{ "name": "Depo Estradiol" }
+{ "name": "Depo Provera" }
+{ "name": "Depo-Medrol" }
+{ "name": "Depo-subQ Provera 104" }
+{ "name": "Depo-Testosterone" }
+{ "name": "Depocyt" }
+{ "name": "Dermagraft Dermal Substitute 2x3" }
+{ "name": "Dermazene cream" }
+{ "name": "Descovy" }
+{ "name": "Desonate" }
+{ "name": "Desoxyn tablet" }
+{ "name": "Detachol" }
+{ "name": "Detrol" }
+{ "name": "Detrol LA" }
+{ "name": "Dexilant" }
+{ "name": "Diabetisource AC" }
+{ "name": "Diclegis Tablet" }
+{ "name": "Diflucan" }
+{ "name": "Dilantin" }
+{ "name": "Doxil" }
+{ "name": "Droxia" }
+{ "name": "Duac Topical Gel" }
+{ "name": "Duavee Tablet" }
+{ "name": "Duexis Tablet" }
+{ "name": "Dulera Inhalation Aerosol" }
+{ "name": "Durezol" }
+{ "name": "Duzallo tablets " }
+{ "name": "Dymista Nasal Spray" }
+{ "name": "Dysport Injection" }
+{ "name": "E.E.S. granules; oral" }
+{ "name": "Edarbi Tablet" }
+{ "name": "Edarbyclor Tablet" }
+{ "name": "Edurant" }
+{ "name": "Effexor XR" }
+{ "name": "Effient Tablets" }
+{ "name": "Egrifta" }
+{ "name": "Elaprase Solution" }
+{ "name": "Elidel" }
+{ "name": "Eligard" }
+{ "name": "Eliquis" }
+{ "name": "Elitek" }
+{ "name": "Ellence" }
+{ "name": "Elmiron" }
+{ "name": "Elocon Cream" }
+{ "name": "Elocon Lotion" }
+{ "name": "Eloctate Injection" }
+{ "name": "Emadine" }
+{ "name": "Embeda" }
+{ "name": "Emcyt" }
+{ "name": "EMEND" }
+{ "name": "EMEND for Injection" }
+{ "name": "Emflaza" }
+{ "name": "Empliciti" }
+{ "name": "EMSAM" }
+{ "name": "Emtriva" }
+{ "name": "Emtriva Oral Solution" }
+{ "name": "Emverm" }
+{ "name": "Enbrel" }
+{ "name": "Enemeez" }
+{ "name": "Enfamil EnfaCare" }
+{ "name": "Enfamil Human Milk Fortifier Powder" }
+{ "name": "Enfamil Infant Formula Liquid" }
+{ "name": "Enfamil Infant Formula Powder" }
+{ "name": "Enfamil Reguline Powder" }
+{ "name": "Engerix-B" }
+{ "name": "Entereg Capsule" }
+{ "name": "Entresto" }
+{ "name": "Entyvio Injection" }
+{ "name": "Envarsus XR" }
+{ "name": "Epclusa" }
+{ "name": "Epiduo Gel" }
+{ "name": "Epinephrine auto injector .15mg" }
+{ "name": "EpiPen" }
+{ "name": "EpiPen Jr" }
+{ "name": "Epivir oral solution" }
+{ "name": "Epivir tablets" }
+{ "name": "Epivir-HBV oral solution" }
+{ "name": "Epivir-HBV tablets" }
+{ "name": "Epogen" }
+{ "name": "Epzicom tablets" }
+{ "name": "Equetro" }
+{ "name": "Eraxis" }
+{ "name": "Erbitux" }
+{ "name": "Erivedge" }
+{ "name": "Erleada Tablets" }
+{ "name": "Erwinaze Injection" }
+{ "name": "EryPed" }
+{ "name": "Esbriet Capsule" }
+{ "name": "Estrace Cream" }
+{ "name": "Estring" }
+{ "name": "Etopophos" }
+{ "name": "Evista" }
+{ "name": "Evotaz Tablet" }
+{ "name": "Evzio" }
+{ "name": "Exalgo tablets" }
+{ "name": "Exjade" }
+{ "name": "Extavia" }
+{ "name": "Eylea injection" }
+{ "name": "Fabrazyme" }
+{ "name": "Famvir" }
+{ "name": "Fanapt" }
+{ "name": "Fareston" }
+{ "name": "Farxiga Tablet" }
+{ "name": "Farydak Capsule" }
+{ "name": "Fasenra" }
+{ "name": "Faslodex" }
+{ "name": "Feiba VH powder" }
+{ "name": "Felbatol Oral Suspension" }
+{ "name": "Felbatol Tablets" }
+{ "name": "Feldene" }
+{ "name": "Fentora" }
+{ "name": "Fetzima Extended Release Capsules" }
+{ "name": "Finacea" }
+{ "name": "Finacea Foam" }
+{ "name": "Firazyr  Injection" }
+{ "name": "Flagyl" }
+{ "name": "Flarex" }
+{ "name": "Flebogamma" }
+{ "name": "Flector Patch 1.3%" }
+{ "name": "Flexeril" }
+{ "name": "Florinef" }
+{ "name": "Flovent Diskus 100mcg" }
+{ "name": "Flovent Diskus 250 mcg" }
+{ "name": "Flovent Diskus 50mcg" }
+{ "name": "Flovent HFA 110 mcg" }
+{ "name": "Flovent HFA 220 mcg" }
+{ "name": "Flovent HFA 44 mcg" }
+{ "name": "Focalin XR" }
+{ "name": "Folotyn" }
+{ "name": "Forfivo XL Tablet" }
+{ "name": "Forteo" }
+{ "name": "Fosrenol" }
+{ "name": "Fragmin" }
+{ "name": "FreeStyle Glucose Test Strips" }
+{ "name": "FreeStyle Meter Monitoring System" }
+{ "name": "Frova 2.5mg" }
+{ "name": "Fusilev Injection" }
+{ "name": "Fycompa Tablet" }
+{ "name": "Gabitril" }
+{ "name": "Galzin" }
+{ "name": "Gammagard" }
+{ "name": "Gammaplex iv  " }
+{ "name": "Gamunex-C" }
+{ "name": "Gardasil 9" }
+{ "name": "Gattex Injectable" }
+{ "name": "Gazyva" }
+{ "name": "Gelnique" }
+{ "name": "Gengraf Capsules" }
+{ "name": "Genotropin" }
+{ "name": "Genvoya" }
+{ "name": "Geodon" }
+{ "name": "Gilenya" }
+{ "name": "Gilotrif Tablet" }
+{ "name": "Glassia  Injection" }
+{ "name": "Glatopa" }
+{ "name": "Gleevec" }
+{ "name": "Gliadel Wafer" }
+{ "name": "GlucaGen Hypokit" }
+{ "name": "Glucagon" }
+{ "name": "Glucotrol" }
+{ "name": "Glynase PresTab" }
+{ "name": "Glyset" }
+{ "name": "Glytrol" }
+{ "name": "Glyxambi Tablet" }
+{ "name": "Gonal-f prefilled pen" }
+{ "name": "Gralise tablet" }
+{ "name": "Granix Injection" }
+{ "name": "H.P. Acthar Gel" }
+{ "name": "Halaven Injection" }
+{ "name": "Halcion" }
+{ "name": "Haldol Decanoate Injection" }
+{ "name": "Haldol injection" }
+{ "name": "Harvoni tablet" }
+{ "name": "Havrix" }
+{ "name": "Helixate FS" }
+{ "name": "Hemabate" }
+{ "name": "Hemofil M AHF" }
+{ "name": "Heparin" }
+{ "name": "Hepsera" }
+{ "name": "Herceptin" }
+{ "name": "Hetlioz" }
+{ "name": "Hizentra vial 20%" }
+{ "name": "Horizant" }
+{ "name": "Humalog Injection" }
+{ "name": "Humalog KwikPen" }
+{ "name": "Humalog KwikPen Mix 50/50" }
+{ "name": "Humalog KwikPen Mix 75/25" }
+{ "name": "Humalog Mix 50/50" }
+{ "name": "Humalog Mix 75/25" }
+{ "name": "Humate-P" }
+{ "name": "HUMIRA" }
+{ "name": "Humulin 70/30" }
+{ "name": "Humulin N Injection" }
+{ "name": "Humulin R Injection" }
+{ "name": "Humulin R U-500 Injection; Concentrated" }
+{ "name": "Hyalgan" }
+{ "name": "Hycamtin capsules" }
+{ "name": "Hycamtin injection" }
+{ "name": "Hymovis" }
+{ "name": "Hypercare Solution Rx solution; topical" }
+{ "name": "HyQvia Injectable" }
+{ "name": "Hysingla ER" }
+{ "name": "Ibrance" }
+{ "name": "Iclusig" }
+{ "name": "Idamycin" }
+{ "name": "Idelvion" }
+{ "name": "Idhifa" }
+{ "name": "Ilaris" }
+{ "name": "Ilevro" }
+{ "name": "Iluvien" }
+{ "name": "Imbruvica" }
+{ "name": "Imfinzi" }
+{ "name": "Imitrex (Nasal Spray)" }
+{ "name": "Imlygic" }
+{ "name": "Imogam" }
+{ "name": "Imovax" }
+{ "name": "Impact Peptide 1.5" }
+{ "name": "Increlex Injection" }
+{ "name": "Incruse Ellipta" }
+{ "name": "InFed" }
+{ "name": "Inflectra" }
+{ "name": "Ingrezza" }
+{ "name": "Injectafer Injection" }
+{ "name": "Inlyta" }
+{ "name": "InnoPran XL" }
+{ "name": "Inspra" }
+{ "name": "Intelence" }
+{ "name": "Intuniv Extended Release Tablets" }
+{ "name": "Invanz" }
+{ "name": "Invega Sustenna" }
+{ "name": "Invega Trinza" }
+{ "name": "Invokamet" }
+{ "name": "Invokamet XR" }
+{ "name": "Invokana" }
+{ "name": "Iressa" }
+{ "name": "Isentress" }
+{ "name": "Istodax injection" }
+{ "name": "Ixempra" }
+{ "name": "Jadenu Sprinkle granules" }
+{ "name": "Jadenu Tablet" }
+{ "name": "Jakafi Tablet" }
+{ "name": "Jalyn" }
+{ "name": "Janumet" }
+{ "name": "Janumet XR" }
+{ "name": "Januvia" }
+{ "name": "Jardiance Tablet" }
+{ "name": "Jentadueto tablet " }
+{ "name": "Jentadueto XR" }
+{ "name": "Jetrea Injection" }
+{ "name": "Jevtana" }
+{ "name": "Jublia" }
+{ "name": "Kadcyla Injection" }
+{ "name": "Kalbitor injection 10mg/mL" }
+{ "name": "Kaletra oral solution" }
+{ "name": "Kaletra tablets" }
+{ "name": "Kalydeco" }
+{ "name": "Kanuma" }
+{ "name": "Kazano" }
+{ "name": "Kemadrin" }
+{ "name": "Kepivance" }
+{ "name": "Kevzara" }
+{ "name": "Keytruda" }
+{ "name": "Kineret" }
+{ "name": "Kisqali" }
+{ "name": "Kisqali Femara Co-Pack tablets" }
+{ "name": "Klor-Con 8mEQ" }
+{ "name": "Klor-Con M10" }
+{ "name": "Kogenate FS" }
+{ "name": "Kombiglyze XR" }
+{ "name": "Korlym tablets" }
+{ "name": "Kovaltry" }
+{ "name": "Kristalose oral solution" }
+{ "name": "Krystexxa IV" }
+{ "name": "Kuvan" }
+{ "name": "Kyleena" }
+{ "name": "Kyprolis Injection" }
+{ "name": "Lacrisert Ophthalmic insert" }
+{ "name": "Lamictal" }
+{ "name": "Lamictal ODT (patient titration kits)" }
+{ "name": "Lamictal Starter Kits" }
+{ "name": "Lamictal XR" }
+{ "name": "LAMICTAL XR Patient Titration Kits" }
+{ "name": "Lantus" }
+{ "name": "Lantus (SoloStar pen)" }
+{ "name": "Lartruvo" }
+{ "name": "Latuda tablets " }
+{ "name": "Lemtrada" }
+{ "name": "Lenvima" }
+{ "name": "Letairis Tablets" }
+{ "name": "Leukine" }
+{ "name": "Levemir" }
+{ "name": "Levoleucovorin injection" }
+{ "name": "Levoxyl" }
+{ "name": "Lexiscan" }
+{ "name": "Lexiva oral suspension" }
+{ "name": "Lexiva tablets" }
+{ "name": "Lialda" }
+{ "name": "Liletta Intrauterine Contraceptive Device" }
+{ "name": "Lincocin" }
+{ "name": "Linzess Capsules" }
+{ "name": "Lioresal injectable" }
+{ "name": "Lipitor" }
+{ "name": "Lithostat" }
+{ "name": "Livalo" }
+{ "name": "LMX  Anesthetic Cream 4%" }
+{ "name": "Locoid Lotion .1%" }
+{ "name": "Lodosyn tablets" }
+{ "name": "Lomotil" }
+{ "name": "Lonsurf" }
+{ "name": "Lopid" }
+{ "name": "Lorabid" }
+{ "name": "Lotemax  Gel 0.5%" }
+{ "name": "Lotrisone Cream" }
+{ "name": "Lotrisone Lotion" }
+{ "name": "Lotronex" }
+{ "name": "Lovenox" }
+{ "name": "Lucentis" }
+{ "name": "Lumigan" }
+{ "name": "Lumizyme IV" }
+{ "name": "Lupaneta Pack Injection/Tablet" }
+{ "name": "Lupron Depot" }
+{ "name": "Lupron Depot (ped)" }
+{ "name": "Luzu Cream" }
+{ "name": "Lynparza" }
+{ "name": "Lynparza Capsule" }
+{ "name": "Lyrica" }
+{ "name": "Lyrica CR" }
+{ "name": "Lysodren" }
+{ "name": "M-M-R ll" }
+{ "name": "Macugen injection" }
+{ "name": "Makena Injection" }
+{ "name": "Malarone tablets" }
+{ "name": "Marinol capsules" }
+{ "name": "Marplan" }
+{ "name": "Marqibo Injectable" }
+{ "name": "Mastisol" }
+{ "name": "MatriStem Wound Matrix" }
+{ "name": "Matulane" }
+{ "name": "Maxalt" }
+{ "name": "Maxalt-MLT" }
+{ "name": "Maxidex" }
+{ "name": "Medrol" }
+{ "name": "Mekinist" }
+{ "name": "Melpaque HP cream" }
+{ "name": "Menactra " }
+{ "name": "Menest" }
+{ "name": "Menomune" }
+{ "name": "Menopur Injection" }
+{ "name": "Menostar" }
+{ "name": "Mephyton tablets" }
+{ "name": "Mepron suspension" }
+{ "name": "Metabolic Products Powder" }
+{ "name": "Miacalcin" }
+{ "name": "Mirena" }
+{ "name": "Mirvaso Topical Gel" }
+{ "name": "Monoclate-P" }
+{ "name": "MonoNine Injection" }
+{ "name": "Monovisc" }
+{ "name": "Monurol Powder" }
+{ "name": "Movantik" }
+{ "name": "MoviPrep" }
+{ "name": "Mozobil" }
+{ "name": "MuGard oral rinse" }
+{ "name": "Multaq" }
+{ "name": "Mustargen Injection" }
+{ "name": "Mycamine injection" }
+{ "name": "Mycobutin" }
+{ "name": "Mydayis" }
+{ "name": "Myfortic" }
+{ "name": "Mylotarg" }
+{ "name": "Myobloc Injection" }
+{ "name": "Myozyme" }
+{ "name": "Myrbetriq" }
+{ "name": "Mytesi tablet; delayed-release" }
+{ "name": "Namenda Oral Solution" }
+{ "name": "Namenda Tablets" }
+{ "name": "Namenda Titration Pak" }
+{ "name": "Namenda XR capsule" }
+{ "name": "Namzaric Capsules" }
+{ "name": "Nardil" }
+{ "name": "Nascobal nasal spray" }
+{ "name": "Nasonex" }
+{ "name": "Natazia" }
+{ "name": "Natpara Injection" }
+{ "name": "Neocate Powdered Formula" }
+{ "name": "NeoProfen Injection" }
+{ "name": "Neoral" }
+{ "name": "Nesina" }
+{ "name": "Neulasta" }
+{ "name": "Neupogen" }
+{ "name": "Neupro Transdermal System" }
+{ "name": "Neurontin" }
+{ "name": "Nevanac" }
+{ "name": "Nexavar" }
+{ "name": "Nicotrol" }
+{ "name": "Ninlaro" }
+{ "name": "Nitro-dur" }
+{ "name": "Nitrostat" }
+{ "name": "Norditropin FlexPro Injection " }
+{ "name": "Noritate Cream" }
+{ "name": "Norpace" }
+{ "name": "Northera Capsule" }
+{ "name": "Norvasc" }
+{ "name": "Norvir oral solution" }
+{ "name": "Norvir Soft Gelatin Capsules" }
+{ "name": "Norvir Tablets" }
+{ "name": "Novarel Injection" }
+{ "name": "Novoeight vial" }
+{ "name": "Novolin 70/30 Vials" }
+{ "name": "Novolin N Vials" }
+{ "name": "Novolin R Vials" }
+{ "name": "NovoLog" }
+{ "name": "NovoLog Mix  70/30" }
+{ "name": "NovoSeven RT injection" }
+{ "name": "Noxafil" }
+{ "name": "Nplate" }
+{ "name": "Nucala" }
+{ "name": "Nuedexta" }
+{ "name": "Nulojix" }
+{ "name": "Nuplazid" }
+{ "name": "Nutramigen Liquid" }
+{ "name": "Nutramigen Powder" }
+{ "name": "Nutren 1.0 with Fiber" }
+{ "name": "Nutren 1.5" }
+{ "name": "Nutren Junior" }
+{ "name": "Nutren Junior Fiber" }
+{ "name": "Nutropin AQ" }
+{ "name": "Nuvigil" }
+{ "name": "Ocrevus" }
+{ "name": "Odefsey" }
+{ "name": "Ofev Capsule" }
+{ "name": "Omnitrope " }
+{ "name": "Omnitrope Injection" }
+{ "name": "Onexton Gel" }
+{ "name": "Onfi Tablet" }
+{ "name": "Onglyza" }
+{ "name": "Onivyde injection" }
+{ "name": "Onzetra Xsail" }
+{ "name": "Opdivo Injection" }
+{ "name": "Opsumit Tablet" }
+{ "name": "Optune Medical Device" }
+{ "name": "Oracea Capsule" }
+{ "name": "ORAP (tablets)" }
+{ "name": "Orbactiv" }
+{ "name": "Orencia" }
+{ "name": "Orenitram tablet; extended release" }
+{ "name": "Orfadin" }
+{ "name": "Orkambi" }
+{ "name": "Ortho-Prefest" }
+{ "name": "Orthovisc" }
+{ "name": "Oseni" }
+{ "name": "Otezla Tablet" }
+{ "name": "Otiprio" }
+{ "name": "Otrexup Injection" }
+{ "name": "Ovidrel injection" }
+{ "name": "Oxsoralen-Ultra" }
+{ "name": "Oxtellar XR Tablet" }
+{ "name": "Oxycontin Tablet" }
+{ "name": "Ozurdex Intravitreal Implant" }
+{ "name": "Pamelor (capsules)" }
+{ "name": "Pancreaze Delayed-Release Capsules" }
+{ "name": "Panhematin Injection" }
+{ "name": "Parsabiv" }
+{ "name": "Pataday" }
+{ "name": "Pazeo" }
+{ "name": "PCE Tablets" }
+{ "name": "Peganone Tablets" }
+{ "name": "Pegasys" }
+{ "name": "Pegasys ProClick" }
+{ "name": "Pennsaid" }
+{ "name": "Pentasa" }
+{ "name": "Peptamen" }
+{ "name": "Peptamen 1.5" }
+{ "name": "Peptamen Junior" }
+{ "name": "Peptamen Junior 1.5 " }
+{ "name": "Peptamen Junior Fiber" }
+{ "name": "Peptamen Junior PreBio" }
+{ "name": "Peptamen PreBio" }
+{ "name": "Perforomist" }
+{ "name": "PERJETA" }
+{ "name": "Pertzye capsule" }
+{ "name": "Pfizerpen" }
+{ "name": "Phoslyra" }
+{ "name": "Phospholine Iodide for Ophthalmic Solution" }
+{ "name": "Photofrin injection" }
+{ "name": "Picato Gel" }
+{ "name": "Plegridy Injection" }
+{ "name": "Pneumovax 23" }
+{ "name": "Pomalyst capsule" }
+{ "name": "Portrazza" }
+{ "name": "Potaba tablets" }
+{ "name": "Pradaxa Capsules" }
+{ "name": "Praluent" }
+{ "name": "Pred Forte Ophthalmic Suspension 1.0%" }
+{ "name": "Pregestimil Powder" }
+{ "name": "Premarin" }
+{ "name": "Premarin vaginal cream" }
+{ "name": "Premphase" }
+{ "name": "Prempro" }
+{ "name": "Prenate AM tablets" }
+{ "name": "Prenate Chewable" }
+{ "name": "Prenate DHA tablets" }
+{ "name": "Prenate Elite tablets" }
+{ "name": "Prenate Enhance" }
+{ "name": "Prenate Essential" }
+{ "name": "Prenate Restore" }
+{ "name": "Prenate Star" }
+{ "name": "Prevacid SoluTab" }
+{ "name": "Prevnar 13" }
+{ "name": "Prezcobix Tablets" }
+{ "name": "Prezista" }
+{ "name": "Prialt " }
+{ "name": "Priftin" }
+{ "name": "Primaxin injection" }
+{ "name": "Primlev  " }
+{ "name": "Pristiq" }
+{ "name": "Privigen vial 10%" }
+{ "name": "ProAir Hfa inhaler" }
+{ "name": "Proair Respiclick" }
+{ "name": "Probuphine" }
+{ "name": "Procanbid" }
+{ "name": "Procardia" }
+{ "name": "Procardia XL" }
+{ "name": "Procrit" }
+{ "name": "Proctocort 1% cream" }
+{ "name": "Proctocort suppositories" }
+{ "name": "Procysbi" }
+{ "name": "Prodigy Insulin Syringes" }
+{ "name": "Prodigy No Coding Blood Glucose Strips" }
+{ "name": "Prodigy Preferred Blood Glucose Monitor" }
+{ "name": "Prodigy Twist Top Lancets 28G" }
+{ "name": "Proglycem oral suspension" }
+{ "name": "Prograf" }
+{ "name": "Prolastin C" }
+{ "name": "Prolensa" }
+{ "name": "Prolia" }
+{ "name": "Promacta" }
+{ "name": "Protonix" }
+{ "name": "Provenge" }
+{ "name": "Proventil HFA Inhaler" }
+{ "name": "Provera" }
+{ "name": "Prozac" }
+{ "name": "Prozac Weekly" }
+{ "name": "Pulmicort Flexhaler" }
+{ "name": "Pulmozyme" }
+{ "name": "PurAmino Powder" }
+{ "name": "PuraPly AM Wound Dressing" }
+{ "name": "PuraPly Wound Dressing" }
+{ "name": "Pylera Capsules" }
+{ "name": "QNASL Nasal Aerosol" }
+{ "name": "Quibron" }
+{ "name": "Quibron T" }
+{ "name": "Quibron T/SR" }
+{ "name": "Quillichew ER" }
+{ "name": "Quillivant XR" }
+{ "name": "Qutenza Patch" }
+{ "name": "Qvar" }
+{ "name": "R-Gene 10 Injection" }
+{ "name": "Rabavert" }
+{ "name": "Ranexa" }
+{ "name": "Rapaflo" }
+{ "name": "Rapamune" }
+{ "name": "Ravicti Liquid" }
+{ "name": "Rayaldee" }
+{ "name": "Rayos Tablet, Extended Release" }
+{ "name": "Rebif subcutaneous" }
+{ "name": "Reclast" }
+{ "name": "Recombinate rAHF" }
+{ "name": "Recombivax Hb" }
+{ "name": "Rectiv ointment" }
+{ "name": "Relenza" }
+{ "name": "Relistor injection" }
+{ "name": "Relistor tablets" }
+{ "name": "Relizorb" }
+{ "name": "Relpax" }
+{ "name": "Remicade" }
+{ "name": "Remodulin injection" }
+{ "name": "Renflexis" }
+{ "name": "Renova" }
+{ "name": "Repatha" }
+{ "name": "Requip XL" }
+{ "name": "Rescriptor" }
+{ "name": "Restasis" }
+{ "name": "Retin-A Micro" }
+{ "name": "Retisert " }
+{ "name": "Retrovir capsules" }
+{ "name": "Retrovir syrup" }
+{ "name": "Retrovir tablets" }
+{ "name": "Revatio" }
+{ "name": "Revlimid" }
+{ "name": "Rexulti tablet" }
+{ "name": "Reyataz" }
+{ "name": "Rhophylac Injection" }
+{ "name": "RiaSTAP" }
+{ "name": "Ridaura" }
+{ "name": "Risperdal" }
+{ "name": "Risperdal Consta" }
+{ "name": "Rituxan" }
+{ "name": "Rituxan Hycela" }
+{ "name": "Rituxan RA" }
+{ "name": "Rixubis" }
+{ "name": "Roxicodone Tablet" }
+{ "name": "Rozerem" }
+{ "name": "Rubraca" }
+{ "name": "Rydapt" }
+{ "name": "Rytary Capsule; Extended Release" }
+{ "name": "Rythmol SR" }
+{ "name": "Sabril  Powder for Oral Solution 500mg" }
+{ "name": "Sabril Tablet 500mg" }
+{ "name": "Safyral" }
+{ "name": "Saizen" }
+{ "name": "Samsca Tablets 15mg, 30mg" }
+{ "name": "Sancuso" }
+{ "name": "Sandimmune" }
+{ "name": "Sandostatin LAR Depot" }
+{ "name": "Saphris sublingual tablets" }
+{ "name": "Savaysa tablet" }
+{ "name": "Savella" }
+{ "name": "Savella Titration Pak" }
+{ "name": "Sculptra" }
+{ "name": "Seebri neohaler" }
+{ "name": "Selzentry" }
+{ "name": "Sensipar" }
+{ "name": "Serevent Diskus (Inhalation Powder)" }
+{ "name": "Serostim" }
+{ "name": "Signifor Injection" }
+{ "name": "Signifor LAR Injection" }
+{ "name": "Siliq" }
+{ "name": "Silsoft Contact Lenses" }
+{ "name": "Simbrinza" }
+{ "name": "Simponi" }
+{ "name": "Simponi ARIA  Injection" }
+{ "name": "Singulair 4mg Oral Granules" }
+{ "name": "Sirturo Tablets" }
+{ "name": "Skelaxin" }
+{ "name": "Skyla" }
+{ "name": "Soliqua" }
+{ "name": "Soliris" }
+{ "name": "Solodyn" }
+{ "name": "Somatuline Depot Injection" }
+{ "name": "Somavert" }
+{ "name": "Sonata" }
+{ "name": "Soolantra cream" }
+{ "name": "Soriatane Capsules" }
+{ "name": "Sotylize Oral Solution" }
+{ "name": "Sovaldi Tablet" }
+{ "name": "Spiriva HandiHaler" }
+{ "name": "Spiriva Respimat Spray" }
+{ "name": "Sporanox Casules" }
+{ "name": "Sporanox Oral Solution" }
+{ "name": "Sprycel" }
+{ "name": "Stelara" }
+{ "name": "Stimate" }
+{ "name": "Stiolto Respimat" }
+{ "name": "Stivarga" }
+{ "name": "Strattera" }
+{ "name": "Strensiq injection" }
+{ "name": "Stribild tablet" }
+{ "name": "Striverdi Respimat Spray" }
+{ "name": "Stromectol" }
+{ "name": "Sublocade" }
+{ "name": "Sublocade film; sublingual" }
+{ "name": "Suboxone Sublingual Film" }
+{ "name": "Subsys spray" }
+{ "name": "Sucraid Oral Solution" }
+{ "name": "Supprelin LA" }
+{ "name": "Sustiva" }
+{ "name": "Sutent" }
+{ "name": "Sylvant" }
+{ "name": "Symbicort" }
+{ "name": "Symbyax" }
+{ "name": "SymlinPen" }
+{ "name": "Symmetrel" }
+{ "name": "Symtuza" }
+{ "name": "Synagis" }
+{ "name": "Synarel" }
+{ "name": "Synjardy" }
+{ "name": "Synribo" }
+{ "name": "Synthroid Tablets" }
+{ "name": "Synvisc" }
+{ "name": "Synvisc-One Injection" }
+{ "name": "Syprine capsules" }
+{ "name": "Systane" }
+{ "name": "Taclonex Topical Suspension" }
+{ "name": "Tafinlar" }
+{ "name": "Tagrisso" }
+{ "name": "Taltz" }
+{ "name": "Tanzeum injection" }
+{ "name": "Tarceva" }
+{ "name": "Targretin" }
+{ "name": "Targretin Gel 1%" }
+{ "name": "Tasigna" }
+{ "name": "Tasmar tablets" }
+{ "name": "Tavalisse" }
+{ "name": "Tazorac Cream .05%" }
+{ "name": "Tazorac Cream .1%" }
+{ "name": "Tazorac Gel .05%" }
+{ "name": "Tazorac Gel .1%" }
+{ "name": "Tecentriq" }
+{ "name": "Tecfidera Capsule; Delayed Release" }
+{ "name": "Technivie" }
+{ "name": "Teflaro" }
+{ "name": "Tegretol" }
+{ "name": "Tegretol XR" }
+{ "name": "Temodar" }
+{ "name": "Tenivac" }
+{ "name": "Tessalon Capsule" }
+{ "name": "Thalitone" }
+{ "name": "Thalomid" }
+{ "name": "Thiola" }
+{ "name": "Thyrogen injection" }
+{ "name": "Tikosyn" }
+{ "name": "Tilade" }
+{ "name": "Timoptic in Occudose" }
+{ "name": "Tirosint Capsules" }
+{ "name": "Tivicay tablet" }
+{ "name": "TNKase" }
+{ "name": "Tobi" }
+{ "name": "TOBI Podhaler" }
+{ "name": "Tobradex ophthalmic ointment" }
+{ "name": "Tobradex ophthalmic solution" }
+{ "name": "Tobradex ST" }
+{ "name": "Tofranil (tablets)" }
+{ "name": "Tolerex" }
+{ "name": "Torisel" }
+{ "name": "Toujeo" }
+{ "name": "Toviaz" }
+{ "name": "Tracleer tablets" }
+{ "name": "Tradjenta" }
+{ "name": "Tranxene" }
+{ "name": "Travatan Z " }
+{ "name": "Treanda" }
+{ "name": "Trecator Tablets" }
+{ "name": "Trelegy Ellipta" }
+{ "name": "Trelstar" }
+{ "name": "Tremfya" }
+{ "name": "Tretten Injection" }
+{ "name": "Triesence" }
+{ "name": "Trileptal" }
+{ "name": "Trintellix" }
+{ "name": "Trisenox" }
+{ "name": "Triumeq" }
+{ "name": "Trizivir (Tablets)" }
+{ "name": "Trokendi XR Capsule" }
+{ "name": "Trulicity" }
+{ "name": "Trumenba" }
+{ "name": "Trusopt" }
+{ "name": "Truvada" }
+{ "name": "Tudorza Pressair" }
+{ "name": "Tybost" }
+{ "name": "Tygacil" }
+{ "name": "Tykerb" }
+{ "name": "Tymlos" }
+{ "name": "Tysabri Vial" }
+{ "name": "Tyvaso inhalation solution" }
+{ "name": "Uceris Extended Release tablets" }
+{ "name": "Uceris rectal foam" }
+{ "name": "Uloric" }
+{ "name": "Ultresa" }
+{ "name": "Uptravi" }
+{ "name": "Uribel Capsules " }
+{ "name": "Urocit-K" }
+{ "name": "Utibron neohaler" }
+{ "name": "V-Go Disposable Insulin Delivery" }
+{ "name": "Valcyte" }
+{ "name": "Vaqta" }
+{ "name": "Varivax" }
+{ "name": "Varubi tablet" }
+{ "name": "Vascepa" }
+{ "name": "Vectibix" }
+{ "name": "Velcade" }
+{ "name": "Veletri Injection" }
+{ "name": "Velphoro Chewable Tablets" }
+{ "name": "Veltassa" }
+{ "name": "Vemlidy" }
+{ "name": "Venclexta" }
+{ "name": "Venofer" }
+{ "name": "Ventavis" }
+{ "name": "Ventolin HFA" }
+{ "name": "Verzenio" }
+{ "name": "VESIcare" }
+{ "name": "Vfend" }
+{ "name": "Viagra" }
+{ "name": "Vibativ Vial 750mg" }
+{ "name": "Viberzi" }
+{ "name": "Victoza injection" }
+{ "name": "Vidaza" }
+{ "name": "Viekira Pak" }
+{ "name": "Viekira XR" }
+{ "name": "Vigamox" }
+{ "name": "Viibryd tablets" }
+{ "name": "Vimovo" }
+{ "name": "Vimpat tablets" }
+{ "name": "Viokace tablets" }
+{ "name": "Viracept" }
+{ "name": "Viramune XR" }
+{ "name": "Viread" }
+{ "name": "Viroptic" }
+{ "name": "Vistaril" }
+{ "name": "Visudyne" }
+{ "name": "Vitekta" }
+{ "name": "Vivitrol" }
+{ "name": "Vivonex Pediatric" }
+{ "name": "Vivonex Plus" }
+{ "name": "Vivonex RTF" }
+{ "name": "Vivonex T.E.N." }
+{ "name": "Vivotif capsule" }
+{ "name": "Vosevi" }
+{ "name": "Votrient" }
+{ "name": "VPRIV Injection" }
+{ "name": "Vraylar" }
+{ "name": "Vytorin" }
+{ "name": "Vyvanse" }
+{ "name": "Vyxeos" }
+{ "name": "Vyzulta" }
+{ "name": "Welchol" }
+{ "name": "Wilate" }
+{ "name": "Xalatan" }
+{ "name": "Xalkori" }
+{ "name": "Xanax" }
+{ "name": "Xarelto" }
+{ "name": "Xeljanz tablet" }
+{ "name": "Xenazine Tablets" }
+{ "name": "Xeomin Injection" }
+{ "name": "Xermelo" }
+{ "name": "XGEVA" }
+{ "name": "Xiaflex Injection" }
+{ "name": "Xifaxan" }
+{ "name": "Xigduo XR" }
+{ "name": "Xiidra" }
+{ "name": "Xofigo injection" }
+{ "name": "Xolair" }
+{ "name": "Xtandi" }
+{ "name": "Xyrem" }
+{ "name": "Yasmin" }
+{ "name": "Yaz" }
+{ "name": "Yervoy" }
+{ "name": "Yondelis" }
+{ "name": "Zaltrap" }
+{ "name": "Zarontin" }
+{ "name": "Zarxio" }
+{ "name": "Zavesca capsule" }
+{ "name": "Zejula" }
+{ "name": "Zelapar" }
+{ "name": "Zelboraf" }
+{ "name": "Zemaira" }
+{ "name": "Zenpep capsules" }
+{ "name": "Zepatier" }
+{ "name": "Zerbaxa Injection" }
+{ "name": "Zetia" }
+{ "name": "Zevalin" }
+{ "name": "Ziagen oral solution" }
+{ "name": "Ziagen tablets" }
+{ "name": "Zinecard" }
+{ "name": "Zinplava" }
+{ "name": "Zirgan" }
+{ "name": "Zithromax" }
+{ "name": "Zmax" }
+{ "name": "Zolinza" }
+{ "name": "Zoloft" }
+{ "name": "Zomacton" }
+{ "name": "Zometa" }
+{ "name": "Zomig (nasal spray)" }
+{ "name": "Zomig (tablets)" }
+{ "name": "Zomig orally disintegrated tablets ZMT" }
+{ "name": "Zortress" }
+{ "name": "Zostavax" }
+{ "name": "Zubsolv Tablet; Sublingual" }
+{ "name": "Zurampic tablets " }
+{ "name": "Zyclara" }
+{ "name": "Zydelig Tablet" }
+{ "name": "Zykadia" }
+{ "name": "Zylet" }
+{ "name": "Zyprexa" }
+{ "name": "Zyprexa Relprevv" }
+{ "name": "Zyprexa Zydis" }
+{ "name": "Zytiga tablets" }
+{ "name": "Zyvox" }
