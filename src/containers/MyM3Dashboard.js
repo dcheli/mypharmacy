@@ -17,6 +17,7 @@ class MyM3DashBoard extends Component {
         super(props);
         this.state = { 
             openReleaseConfirm: false,
+            openCompleteConfirm: false,
             selectedScriptId: ''};
     }
 
@@ -25,14 +26,31 @@ class MyM3DashBoard extends Component {
     }
  
     handleReleaseButton = (e) => {
-        console.log("Handling Release Button");
         this.setState({openReleaseConfirm: true, selectedScriptId: e.target.value});
     }
 
     handleCompleteButton = (e) => {
-        console.log("Handling Complete Button");
-        this.setState({openReleaseConfirm: true, selectedScriptId: e.target.value});
+        this.setState({openCompleteConfirm: true, selectedScriptId: e.target.value});
     }
+
+    handleCompleteConfirm = () => {
+        this.setState({openCompleteConfirm: false});
+
+        axios.put(Constants.ROOT_URL + '/api/m3/' + Constants.ETH_ADDRESS + '/completescript', {
+            scriptId : this.state.selectedScriptId
+        })
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    }
+
+    handleCompleteCancel = () => {
+        this.setState({openCompleteConfirm: false});
+    }
+
 
 
     handleReleaseConfirm = () => {
@@ -44,7 +62,7 @@ class MyM3DashBoard extends Component {
         .then(function (response) {
             console.log(response);
         })
-            .catch(function (error) {
+        .catch(function (error) {
             console.log(error);
         });
     }
@@ -73,14 +91,15 @@ class MyM3DashBoard extends Component {
                     <Cell>{d.toLocaleDateString()} {d.toLocaleTimeString()}</Cell>
                     <Cell>$ {priceInDollars}</Cell>
                     <Cell>{ScriptStatus[prescription.status]}</Cell>
-                    <Cell>{ScriptStatus[prescription.status] !== 'Cancelled' ?
+                    <Cell>{ScriptStatus[prescription.status] === 'Claimed' ?
                     <div>
                         <Button primary onClick={this.handleReleaseButton}
                             value={prescription.scriptId}>Release</Button> 
                         <Button primary onClick={this.handleCompleteButton}
                             value={prescription.scriptId}>Complete</Button> 
-                    </div>:
-                        <Icon name='checkmark' color='green' size='large'/>}</Cell>
+                    </div>: ""}
+                        {ScriptStatus[prescription.status] === 'Completed' ?
+                        <div><Icon name='checkmark' color='green' size='large'/></div>: ""}</Cell>
                 </Row>
             );
         });
@@ -124,9 +143,20 @@ class MyM3DashBoard extends Component {
                 onConfirm={this.handleReleaseConfirm}
                 header='Release Header'
                 content='Some release stuff'
-                confirmButton='I Agree'
+                confirmButton='Release'
                 onCancel={this.handleReleaseCancel}
             />
+
+            <Confirm 
+                open={this.state.openCompleteConfirm}                    
+                onConfirm={this.handleCompleteConfirm}
+                header='Complete Header'
+                content='Some complete stuff'
+                confirmButton='Complete'
+                onCancel={this.handleCompleteCancel}
+            />
+
+
             </div>
 
         );
