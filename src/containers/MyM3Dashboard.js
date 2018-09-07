@@ -9,7 +9,6 @@ import Constants from '../constants';
 
 
 // this should come from Metamask I think
-const ethAddr = '0x895aE68111DA9323632e783671b451C867378155'
 const ScriptStatus = [ "Authorized", "Cancelled", "Claimed", "Countered", "Released", "Completed"];
 
 class MyM3DashBoard extends Component {
@@ -17,24 +16,29 @@ class MyM3DashBoard extends Component {
     constructor(props){
         super(props);
         this.state = { 
-            openCancelConfirm: false,
+            openReleaseConfirm: false,
             selectedScriptId: ''};
     }
 
     componentDidMount() {
-        this.props.fetchM3Prescriptions(ethAddr);
+        this.props.fetchMyM3Prescriptions(Constants.ETH_ADDRESS);
     }
  
-    handleCancelButton = (e) => {
-        this.setState({openCancelConfirm: true, selectedScriptId: e.target.value});
+    handleReleaseButton = (e) => {
+        console.log("Handling Release Button");
+        this.setState({openReleaseConfirm: true, selectedScriptId: e.target.value});
+    }
+
+    handleCompleteButton = (e) => {
+        console.log("Handling Complete Button");
+        this.setState({openReleaseConfirm: true, selectedScriptId: e.target.value});
     }
 
 
-
-    handleConfirmConfirm = () => {
-        this.setState({openCancelConfirm: false});
+    handleReleaseConfirm = () => {
+        this.setState({openReleaseConfirm: false});
         
-        axios.put(Constants.ROOT_URL + '/api/m3/' + ethAddr +'/cancelscript',{
+        axios.put(Constants.ROOT_URL + '/api/m3/' + Constants.ETH_ADDRESS +'/releasescript',{
             scriptId: this.state.selectedScriptId
         })
         .then(function (response) {
@@ -45,8 +49,8 @@ class MyM3DashBoard extends Component {
         });
     }
     
-    handleConfirmCancel = () => {
-        this.setState({openCancelConfirm: false});
+    handleReleaseCancel = () => {
+        this.setState({openReleaseConfirm: false});
     }
 
 
@@ -70,8 +74,12 @@ class MyM3DashBoard extends Component {
                     <Cell>$ {priceInDollars}</Cell>
                     <Cell>{ScriptStatus[prescription.status]}</Cell>
                     <Cell>{ScriptStatus[prescription.status] !== 'Cancelled' ?
-                        <Button primary onClick={this.handleCancelButton}
-                            value={prescription.scriptId}>Cancel Prescription</Button> :
+                    <div>
+                        <Button primary onClick={this.handleReleaseButton}
+                            value={prescription.scriptId}>Release</Button> 
+                        <Button primary onClick={this.handleCompleteButton}
+                            value={prescription.scriptId}>Complete</Button> 
+                    </div>:
                         <Icon name='checkmark' color='green' size='large'/>}</Cell>
                 </Row>
             );
@@ -112,12 +120,12 @@ class MyM3DashBoard extends Component {
              </Table>
 
             <Confirm 
-                open={this.state.openCancelConfirm}                    
-                onConfirm={this.handleConfirmConfirm}
-                header='Cancelling Header'
-                content='Some cancel stuff'
+                open={this.state.openReleaseConfirm}                    
+                onConfirm={this.handleReleaseConfirm}
+                header='Release Header'
+                content='Some release stuff'
                 confirmButton='I Agree'
-                onCancel={this.handleConfirmCancel}
+                onCancel={this.handleReleaseCancel}
             />
             </div>
 

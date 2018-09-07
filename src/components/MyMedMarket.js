@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import { Button, Table, Dimmer,Loader, Confirm, Accordion, Icon, Form,  Segment  } from 'semantic-ui-react';
+import { Button, Table, Dimmer,Loader, Confirm, Accordion, Icon, Form,  Segment, Message  } from 'semantic-ui-react';
 import _ from 'lodash';
 import * as actions  from '../actions';
 import hex2ascii from 'hex2ascii';
 import axios from 'axios';
 import Constants from '../constants';
 import { connect } from 'react-redux';
+import CounterModal from '../components/CounterModal';
 
 import states from '../../static/data/stateOptions';
 const ScriptStatus = [ "Authorized", "Cancelled", "Claimed", "Countered", "Released", "Completed"];
 // this needs to be refactored when you are smarter; it is tightly coupled to dFormFilter
-const dFormArray = ["Capsule","Cream" ,"Lotion","OintmentGel","Solution","Sublingual","Tablet"];
+const dFormArray = ["Capsule","Cream" ,"Lotion","OintmentGel","Solution","Sublingual","Tablet", "Syrup"];
 
 class MyMedMarket extends Component {
 
@@ -19,15 +20,15 @@ class MyMedMarket extends Component {
         super(props);
         this.state = { 
             tClassFilter : [false, true, false, false, true, true, false, true, false, false, false, true, false, true, false, false, false, false ],
-            dFormFilter :  [false, true, true, true, true, false, true],
-             
-           // dFormArray: ["Capsule","Cream" ,"Lotion","OintmentGel","Solution","Sublingual","Tablet"],
+            dFormFilter :  [false, true, true, true, true, false, true, true],
             allStates: false,
             stateFilter : [ "MO","IL"],
             activeIndex: 0,
             selectedScriptId: '', 
             popup: false,
-            openClaimConfirm: false };
+            openClaimConfirm: false,
+            counterOffer: '',
+            action:'' };
     }
 
     componentDidMount() {
@@ -41,7 +42,7 @@ class MyMedMarket extends Component {
     
         this.setState({ activeIndex: newIndex })
     }
-
+    // NOTE: this is NOT React/Redux state, but USA State filter
     handleStateChange = (event, result) => {
         const {name, value} = result;
         this.setState({
@@ -67,7 +68,7 @@ class MyMedMarket extends Component {
 
     handleClaimConfirm = () => {
         console.log("Claiming in progress");
-        this.setState({openClaimConfirm: false});
+        this.setState({openClaimConfirm: false, action: "Claimed"});
         
         axios.put(Constants.ROOT_URL + '/api/m3/' + Constants.ETH_ADDRESS +'/claimscript',{
             scriptId: this.state.selectedScriptId
@@ -84,6 +85,29 @@ class MyMedMarket extends Component {
     handleClaimCancel = () => {
         this.setState({openClaimConfirm: false});
     }
+
+    handlePopupDismiss = () => {
+        this.setState({ popup: false })
+    }
+
+
+    getCounterOffer = (scriptId, counterOffer) => {
+        axios.put(Constants.ROOT_URL + '/api/m3/' + Constants.ETH_ADDRESS +'/counterscript',{
+            scriptId: scriptId,
+            counterOffer: counterOffer
+        })
+        .then((response) => {
+            this.setState({popup: true});
+        })
+            .catch(function (error) {
+            console.log(error);
+        });
+        this.setState({ counterOffer: counterOffer,
+                        selectedScriptId: scriptId,
+                        action: "Countered"});
+    }
+
+
 
     updateDForm = (event, result) => {
 
@@ -130,9 +154,21 @@ class MyMedMarket extends Component {
                         <div>
                         <Button primary onClick={this.handleClaimButton}
                             value={prescription.scriptId}>Claim</Button> 
-                        <Button primary onClick={this.handleCounterButton}
-                            value={prescription.scriptId}>Counter</Button></div> :
-                        <Icon name='checkmark' color='green' size='large'/>}</Cell>
+                        <CounterModal 
+                            scriptId = {prescription.scriptId}
+                            callback={this.getCounterOffer}
+                        />
+                        </div> : ""}
+                        {ScriptStatus[prescription.status] === "Claimed" ?
+                            <div><Icon name='checkmark' color='green' size='large'/></div> : ""}
+                        {ScriptStatus[prescription.status] === "Countered" ?
+                            <div><CounterModal 
+                            scriptId = {prescription.scriptId}
+                            callback={this.getCounterOffer}
+                        />
+                        </div> : ""}
+                            
+                    </Cell>
                 </Row>
             );
         });
@@ -150,11 +186,20 @@ class MyMedMarket extends Component {
                         </Segment></div>);
 
                         
-        const { activeIndex } = this.state
+        const { activeIndex, popup } = this.state
         const { Header, Row, HeaderCell, Body } = Table;
         
         return (
-            
+            <div>
+                    {(popup) ?
+                <Message 
+                    success
+                    icon
+                    onDismiss={this.handlePopupDismiss}>
+                    <Icon name='check' />
+                    You have successfully {this.state.action} the prescription.
+                </Message>
+                : ""}
             <Form>
             <Segment  raised style={{ backgroundColor : '#D3D3D3' }}>
                 <h3>Marketplace Filters</h3></Segment>
@@ -175,6 +220,7 @@ class MyMedMarket extends Component {
                     <Form.Checkbox id="df4" name="solution" onChange={this.updateDForm} checked={this.state.dFormFilter[4]}  label="Solution"></Form.Checkbox>
                     <Form.Checkbox id="df5" name="sublingual" onChange={this.updateDForm} checked={this.state.dFormFilter[5]} label="Sublingual"></Form.Checkbox>
                     <Form.Checkbox id="df6" name="tablet" onChange={this.updateDForm} checked={this.state.dFormFilter[6]} label="Tablet"></Form.Checkbox>
+                    <Form.Checkbox id="df7" name="syrup" onChange={this.updateDForm} checked={this.state.dFormFilter[7]} label="Syrup"></Form.Checkbox>
                     
                 </Form.Group>
 
@@ -229,6 +275,7 @@ class MyMedMarket extends Component {
             />
 
             </Form>
+            </div>
         );
     }
 }

@@ -80,3 +80,27 @@ function setM3PrescriptionDetails(data) {
         payload: data
     };
 };
+
+
+
+export const fetchMyM3Prescriptions = () => (dispatch) => {
+    axios.get(Constants.ROOT_URL + '/api/m3/' +Constants.ETH_ADDRESS + '/pharmacyscripts')
+        .then (({data}) => {
+            console.log("data is ", data);
+            if(data.length === 0)
+                dispatch({ type: Constants.NOT_FOUND })
+            dispatch(setM3PrescriptionDetails(data));
+        });
+};
+
+/*
+function setM3PrescriptionDetails(data) {
+    return {
+        type: Constants.SET_M3PRESCRIPTION_DETAILS,
+        payload: data
+    };
+};
+*/
+
+
+
