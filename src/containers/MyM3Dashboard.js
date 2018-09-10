@@ -117,25 +117,22 @@ class MyM3DashBoard extends Component {
         
         return (
             <div>
-            <Table>
-            <Table.Header>
-                 <Table.Row>
-                     <Table.HeaderCell colSpan='6'>MyMedMarket Prescriptions</Table.HeaderCell>
-                 </Table.Row>
-             </Table.Header>
-             <Table.Body>
-                 <Table.Row>
-                     <Table.Cell><b>Drug Name</b></Table.Cell>
-                     <Table.Cell><b>Form/Strength/Qty</b></Table.Cell>
-                     <Table.Cell><b>Date Added</b></Table.Cell>
-                     <Table.Cell><b>Price</b></Table.Cell>
-                     <Table.Cell><b>Status</b></Table.Cell>
-                     <Table.Cell ><b>Action</b></Table.Cell>
-
-               </Table.Row>
-                 {this.renderRows()}
-             </Table.Body>
- 
+                <Segment  raised style={{ backgroundColor : '#D3D3D3' }}>
+                <h3>My M3 Dashobard</h3></Segment>
+                <Table>
+                    <Table.Header>
+                        <Table.Row>
+                            <Table.HeaderCell><b>Drug Name</b></Table.HeaderCell>
+                            <Table.HeaderCell><b>Form/Strength/Qty</b></Table.HeaderCell>
+                            <Table.HeaderCell><b>Date Added</b></Table.HeaderCell>
+                            <Table.HeaderCell><b>Price</b></Table.HeaderCell>
+                            <Table.HeaderCell><b>Status</b></Table.HeaderCell>
+                            <Table.HeaderCell ><b>Action</b></Table.HeaderCell>
+                        </Table.Row>
+                    </Table.Header>
+                    <Table.Body>
+                        {this.renderRows()}
+                    </Table.Body>
              </Table>
 
             <Confirm 
