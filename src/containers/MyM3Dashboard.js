@@ -76,10 +76,16 @@ class MyM3DashBoard extends Component {
         var index=0;
         const { mym3prescriptions } = this.props.mym3prescriptions;
         const { Row, Cell } = Table;
+        _.map(mym3prescriptions, p => {
+            console.log("Price from BC is ", parseInt(p.price._hex));
+            console.log("Date from BC is ", p.dateAdded);
+            console.log("drug strength from BC is ", p.drugStrength);
+    
+        });
 
         return _.map(mym3prescriptions, prescription => {
-            var priceInDollars = parseInt(prescription.price) /100
-            var dateInMs = parseInt(prescription.dateAdded) * 1000;
+            var priceInDollars = parseInt(prescription.price._hex) /100
+            var dateInMs = parseInt(prescription.dateAdded._hex) * 1000;
             var d = new Date(dateInMs);
             var drugStrength = hex2ascii(prescription.drugStrength);
             var drugForm = hex2ascii(prescription.drugForm);

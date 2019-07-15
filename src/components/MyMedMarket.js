@@ -132,9 +132,13 @@ class MyMedMarket extends Component {
                     (this.state.dFormFilter[dFormIndex]) )
             });
 
+            _.map(filteredScripts, p => {
+                console.log("Price is ", p.price._hex)
+            })
+
         return _.map(filteredScripts, prescription => {
-            var priceInDollars = parseInt(prescription.price) /100
-            var dateInMs = parseInt(prescription.dateAdded) * 1000;
+            var priceInDollars = parseInt(prescription.price._hex) /100
+            var dateInMs = parseInt(prescription.dateAdded._hex) * 1000;
             var d = new Date(dateInMs);
             var drugStrength = hex2ascii(prescription.drugStrength);
             var state = hex2ascii(prescription.state);
