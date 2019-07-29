@@ -93,6 +93,23 @@ export const fetchMyM3Prescriptions = () => (dispatch) => {
         });
 };
 
+export const fetchMyPatientShares = (address) => (dispatch) => {
+    axios.get(Constants.ROOT_URL + '/api/getkeyevents/' + address)
+    .then(({data}) => {
+        if(data.length === 0) 
+            dispatch({type: Constants.NOT_FOUND})
+        dispatch(setMyPatientShareDetails(data));
+    });
+};
+
+function setMyPatientShareDetails(data) {
+    return {
+        type: Constants.SET_MYPATIENT_SHARE_DETAILS,
+        payload: data
+    };
+};
+
+
 /*
 function setM3PrescriptionDetails(data) {
     return {

@@ -37,7 +37,8 @@ class MyM3DashBoard extends Component {
         this.setState({openCompleteConfirm: false});
 
         axios.put(Constants.ROOT_URL + '/api/m3/' + Constants.ETH_ADDRESS + '/completescript', {
-            scriptId : this.state.selectedScriptId
+            scriptId : this.state.selectedScriptId,
+            address: Constants.ETH_ADDRESS
         })
         .then(function (response) {
             console.log(response);
