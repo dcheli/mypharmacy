@@ -3,7 +3,7 @@ import Constants from '../constants';
 // State argument is not application state, only the state
 // this reducer is responsible for.
 export default function(state = {}, action) {
-    
+    console.log("Action type is ", action.type);
     switch (action.type) {
       case  Constants.SET_M3PRESCRIPTION_DETAILS:
           console.log(Constants.SET_M3PRESCRIPTION_DETAILS);

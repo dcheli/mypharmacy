@@ -85,8 +85,8 @@ class MyM3DashBoard extends Component {
         });
 
         return _.map(mym3prescriptions, prescription => {
-            var priceInDollars = parseInt(prescription.price._hex) /100
-            var dateInMs = parseInt(prescription.dateAdded._hex) * 1000;
+            var priceInDollars = parseInt(prescription.price._hex,16) /100
+            var dateInMs = parseInt(prescription.dateAdded._hex,16) * 1000;
             var d = new Date(dateInMs);
             var drugStrength = hex2ascii(prescription.drugStrength);
             var drugForm = hex2ascii(prescription.drugForm);

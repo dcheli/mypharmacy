@@ -5,6 +5,7 @@ import * as actions from '../actions';
 import _ from 'lodash';
 import axios from 'axios';
 const ROOT_URL = 'http://localhost:5000';
+import Constants from '../constants';
 
 const myId = '5b71e7a398b69632ac5e6393';
 class HealthRecords extends Component {
@@ -27,11 +28,10 @@ class HealthRecords extends Component {
 
     componentDidMount() {
         // this kicks off the data loading process
-        this.props.fetchMyPatientShares('0xA0031fdBD932CBa7B19426FfD8317F4390831985');
+       // this.props.fetchMyPatientShares('0xA0031fdBD932CBa7B19426FfD8317F4390831985');
+        this.props.fetchMyPatientShares(Constants.ETH_ADDRESS);
     }
     
-
-
 
     renderRows() {
         var index=0;
