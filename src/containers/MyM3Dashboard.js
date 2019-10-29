@@ -8,7 +8,6 @@ import axios from 'axios';
 import Constants from '../constants';
 
 
-// this should come from Metamask I think
 const ScriptStatus = [ "Authorized", "Cancelled", "Claimed", "Countered", "Released", "Completed"];
 
 class MyM3DashBoard extends Component {
@@ -18,13 +17,41 @@ class MyM3DashBoard extends Component {
         this.state = { 
             openReleaseConfirm: false,
             openCompleteConfirm: false,
-            selectedScriptId: ''};
+            selectedScriptId: '',
+            column: null,
+            data: [],
+            direction: null};
     }
 
     componentDidMount() {
         this.props.fetchMyM3Prescriptions(Constants.ETH_ADDRESS);
     }
- 
+
+    static getDerivedStateFromProps(props, state) {
+        return {data: props.mym3prescriptions.mym3prescriptions };
+    }
+
+    handleSort = (clickedColumn) => () => {
+
+        const {column, data, direction } = this.state;
+
+        if (column !== clickedColumn) {
+            this.setState({
+              column: clickedColumn,
+              data: _.sortBy(data, [clickedColumn]),
+              direction: 'ascending',
+            })
+      
+            return
+          }
+          console.log("Data is ", data)
+          this.setState({
+            data: data.reverse(),
+            direction: direction === 'ascending' ? 'descending' : 'ascending',
+          })
+        
+    }
+
     handleReleaseButton = (e) => {
         this.setState({openReleaseConfirm: true, selectedScriptId: e.target.value});
     }
@@ -79,24 +106,21 @@ class MyM3DashBoard extends Component {
         const { Row, Cell } = Table;
         _.map(mym3prescriptions, p => {
             console.log("Price from BC is ", parseInt(p.price._hex));
-            console.log("Date from BC is ", p.dateAdded);
-            console.log("drug strength from BC is ", p.drugStrength);
-    
+            console.log("Date from BC is ", p.dateAdded);   
         });
 
         return _.map(mym3prescriptions, prescription => {
             var priceInDollars = parseInt(prescription.price._hex,16) /100
             var dateInMs = parseInt(prescription.dateAdded._hex,16) * 1000;
             var d = new Date(dateInMs);
-            var drugStrength = hex2ascii(prescription.drugStrength);
-            var drugForm = hex2ascii(prescription.drugForm);
-            var drugQuantity = hex2ascii(prescription.drugQuantity);
+            var form = hex2ascii(prescription.form);
+            var quantity = hex2ascii(prescription.quantity);
             return (
                 <Row key={index++} >
-                    <Cell>{prescription.drugName}</Cell>
-                    <Cell>{drugForm}<Icon name='caret right' />{drugStrength}<Icon name='caret right' />{drugQuantity}</Cell>
+                    <Cell>{prescription.formula}</Cell>
+                    <Cell>{form}<Icon name='caret right' />{quantity}</Cell>
                     <Cell>{d.toLocaleDateString()} {d.toLocaleTimeString()}</Cell>
-                    <Cell>$ {priceInDollars}</Cell>
+                    <Cell>$ {priceInDollars.toFixed(2)}</Cell>
                     <Cell>{ScriptStatus[prescription.status]}</Cell>
                     <Cell>{ScriptStatus[prescription.status] === 'Claimed' ?
                     <div>
@@ -121,20 +145,40 @@ class MyM3DashBoard extends Component {
                             <Loader>Loading Prescriptions</Loader>
                         </Dimmer>
                         </Segment></div>);
-        
+        const {column, direction } = this.state;
         return (
             <div>
                 <Segment  raised style={{ backgroundColor : '#D3D3D3' }}>
-                <h3>My M3 Dashobard</h3></Segment>
-                <Table>
+                <h3>MyMedMarketplace Dashboard</h3></Segment>
+                <Table sortable>
                     <Table.Header>
                         <Table.Row>
-                            <Table.HeaderCell><b>Drug Name</b></Table.HeaderCell>
-                            <Table.HeaderCell><b>Form/Strength/Qty</b></Table.HeaderCell>
-                            <Table.HeaderCell><b>Date Added</b></Table.HeaderCell>
-                            <Table.HeaderCell><b>Price</b></Table.HeaderCell>
-                            <Table.HeaderCell><b>Status</b></Table.HeaderCell>
-                            <Table.HeaderCell ><b>Action</b></Table.HeaderCell>
+                        <Table.HeaderCell 
+                        width={5}
+                        sorted={column === 'formula' ? direction : null}
+                        onClick={this.handleSort('formula')}                 
+                     ><b>Formula</b></Table.HeaderCell>
+                     <Table.HeaderCell
+                        width={2}
+                        sorted={column === 'form/qty' ? direction : null}
+                        onClick={this.handleSort('form/qty')}                                      
+                     ><b>Form/Qty</b></Table.HeaderCell>
+                     <Table.HeaderCell
+                        width={2}
+                        sorted={column === 'dateAdded' ? direction : null}
+                        onClick={this.handleSort('dateAdded')}                                                           
+                     ><b>Date Added</b></Table.HeaderCell>
+                     <Table.HeaderCell
+                        width={1}
+                        sorted={column === 'price' ? direction : null}
+                        onClick={this.handleSort('price')}                                                                                
+                     ><b>Price</b></Table.HeaderCell>
+                    <Table.HeaderCell
+                        width={2}
+                        sorted={column === 'status' ? direction : null}
+                        onClick={this.handleSort('status')}                                                           
+                     ><b>Status</b></Table.HeaderCell>
+                     <Table.HeaderCell ><b>Action</b></Table.HeaderCell>
                         </Table.Row>
                     </Table.Header>
                     <Table.Body>
