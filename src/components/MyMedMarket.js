@@ -28,11 +28,40 @@ class MyMedMarket extends Component {
             popup: false,
             openClaimConfirm: false,
             counterOffer: '',
-            action:'' };
+            action:'',
+            column: null,
+            data: [],
+            direction: null
+        };
     }
 
     componentDidMount() {
         this.props.fetchM3Prescriptions();
+    }
+
+    static getDerivedStateFromProps(props, state) {
+        return {data: props.mym3prescriptions.mym3prescriptions };
+    }
+
+    handleSort = (clickedColumn) => () => {
+
+        const {column, data, direction } = this.state;
+
+        if (column !== clickedColumn) {
+            this.setState({
+              column: clickedColumn,
+              data: _.sortBy(data, [clickedColumn]),
+              direction: 'ascending',
+            })
+      
+            return
+          }
+          console.log("Data is ", data)
+          this.setState({
+            data: data.reverse(),
+            direction: direction === 'ascending' ? 'descending' : 'ascending',
+          })
+        
     }
 
     handleClick = (event, titleProps) => {
@@ -125,8 +154,8 @@ class MyMedMarket extends Component {
         const { Row, Cell } = Table;
         
         var filteredScripts = _.filter(mym3prescriptions, (prescription) => {            
-            var drugForm = hex2ascii(prescription.drugForm);
-            var dFormIndex = dFormArray.indexOf(drugForm);
+            var form = hex2ascii(prescription.form);
+            var dFormIndex = dFormArray.indexOf(form);
             
             return ((this.state.allStates || this.state.stateFilter.indexOf(hex2ascii(prescription.state)) > -1) &&
                     (this.state.dFormFilter[dFormIndex]) )
@@ -140,17 +169,16 @@ class MyMedMarket extends Component {
             var priceInDollars = parseInt(prescription.price._hex) /100
             var dateInMs = parseInt(prescription.dateAdded._hex) * 1000;
             var d = new Date(dateInMs);
-            var drugStrength = hex2ascii(prescription.drugStrength);
             var state = hex2ascii(prescription.state);
-            var drugForm = hex2ascii(prescription.drugForm);
-            var drugQuantity = hex2ascii(prescription.drugQuantity);
+            var form = hex2ascii(prescription.form);
+            var quantity = hex2ascii(prescription.quantity);
 
             return (
                 <Row key={index++} >
-                    <Cell>{prescription.drugName}</Cell>
-                    <Cell>{drugForm}<Icon name='caret right' />{drugStrength}<Icon name='caret right' />{drugQuantity}</Cell>
+                    <Cell>{prescription.formula}</Cell>
+                    <Cell>{form}<Icon name='caret right' />{quantity}</Cell>
                     <Cell>{d.toLocaleDateString()} {d.toLocaleTimeString()}</Cell>
-                    <Cell>$ {priceInDollars}</Cell>
+                    <Cell>$ {priceInDollars.toFixed(2)}</Cell>
                     <Cell>{state}</Cell>
                     <Cell>{ScriptStatus[prescription.status]}</Cell>
                     
@@ -189,10 +217,7 @@ class MyMedMarket extends Component {
                         </Dimmer>
                         </Segment></div>);
 
-                        
-        const { activeIndex, popup } = this.state
-        const { Header, Row, HeaderCell, Body } = Table;
-        
+        const { popup, activeIndex, column, direction } = this.state;
         return (
             <div>
                     {(popup) ?
@@ -206,7 +231,7 @@ class MyMedMarket extends Component {
                 : ""}
             <Form>
             <Segment  raised style={{ backgroundColor : '#D3D3D3' }}>
-                <h3>Marketplace Filters</h3></Segment>
+                <h3>MyMedMarketplace Filters</h3></Segment>
 
             <Accordion fluid styled>
 
@@ -250,22 +275,49 @@ class MyMedMarket extends Component {
                 </Accordion.Content>
             </Accordion>
 
-            <Table>
+            <Table sortable>
            <Table.Header>
                  <Table.Row>
-                     <Table.HeaderCell colSpan='7'>MyMedMarket Place</Table.HeaderCell>
+                     <Table.HeaderCell colSpan='7' style={{ backgroundColor : '#D3D3D3' }} ><h3>MyMedMarketplace Prescriptions</h3></Table.HeaderCell>
                  </Table.Row>
              </Table.Header>
-             <Table.Body>
+             </Table>
+             <Table sortable>
+             <Table.Header>
                  <Table.Row>
-                     <Table.Cell><b>Drug Name</b></Table.Cell>
-                     <Table.Cell><b>Form/Strength/Qty</b></Table.Cell>
-                     <Table.Cell><b>Date Added</b></Table.Cell>
-                     <Table.Cell><b>Price</b></Table.Cell>
-                     <Table.Cell><b>State</b></Table.Cell>
-                     <Table.Cell><b>Status</b></Table.Cell>
-                     <Table.Cell ><b>Actions</b></Table.Cell>
+                     <Table.HeaderCell width={5}
+                        sorted={column === 'formula' ? direction : null}
+                        onClick={this.handleSort('formula')}                 
+                     ><b>Formula</b></Table.HeaderCell>
+                     <Table.HeaderCell
+                        width={2}
+                        sorted={column === 'form/qty' ? direction : null}
+                        onClick={this.handleSort('form/qty')}                                      
+                     ><b>Form/Qty</b></Table.HeaderCell>
+                     <Table.HeaderCell
+                        width={2}
+                        sorted={column === 'dateAdded' ? direction : null}
+                        onClick={this.handleSort('dateAdded')}                                                           
+                     ><b>Date Added</b></Table.HeaderCell>
+                     <Table.HeaderCell
+                        width={1}
+                        sorted={column === 'price' ? direction : null}
+                        onClick={this.handleSort('price')}                                                                                
+                     ><b>Price</b></Table.HeaderCell>
+                     <Table.HeaderCell
+                        width={1}
+                        sorted={column === 'state' ? direction : null}
+                        onClick={this.handleSort('state')}                                                                                
+                     ><b>State</b></Table.HeaderCell>
+                     <Table.HeaderCell
+                        width={2}
+                        sorted={column === 'status' ? direction : null}
+                        onClick={this.handleSort('status')}                                                           
+                     ><b>Status</b></Table.HeaderCell>
+                     <Table.HeaderCell ><b>Actions</b></Table.HeaderCell>
                </Table.Row>
+               </Table.Header>
+               <Table.Body>
                {this.renderRows()}
              </Table.Body>                
             </Table>
