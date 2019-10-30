@@ -11,7 +11,8 @@ import CounterModal from '../components/CounterModal';
 import states from '../../static/data/stateOptions';
 const ScriptStatus = [ "Authorized", "Cancelled", "Claimed", "Countered", "Released", "Completed"];
 // this needs to be refactored when you are smarter; it is tightly coupled to dFormFilter
-const dFormArray = ["Capsule","Cream" ,"Lotion","OintmentGel","Solution","Sublingual","Tablet", "Syrup"];
+const dFormArray = ["Capsule","Cream" ,"Lotion","OintmentGel","Solution","Sublingual","Tablet", "Syrup", "Patch"];
+var filteredData = [];
 
 class MyMedMarket extends Component {
 
@@ -40,28 +41,31 @@ class MyMedMarket extends Component {
     }
 
     static getDerivedStateFromProps(props, state) {
-        return {data: props.mym3prescriptions.mym3prescriptions };
+         console.log("calling getDerivedStateFromProps()")
+        if(state.data && state.data.length == 0) {
+            return {data: props.mym3prescriptions };
+        }
+        return null;
     }
 
     handleSort = (clickedColumn) => () => {
 
-        const {column, data, direction } = this.state;
+        const {column, data, direction } = this.state; 
 
         if (column !== clickedColumn) {
             this.setState({
               column: clickedColumn,
-              data: _.sortBy(data, [clickedColumn]),
+              data: _.orderBy(data, [clickedColumn], ['asc']),
               direction: 'ascending',
             })
-      
             return
-          }
-          console.log("Data is ", data)
-          this.setState({
-            data: data.reverse(),
+        }
+
+        this.setState({
+            column: null,
+            data: _.orderBy(data, [clickedColumn], ['desc']),
             direction: direction === 'ascending' ? 'descending' : 'ascending',
-          })
-        
+        })
     }
 
     handleClick = (event, titleProps) => {
@@ -136,8 +140,6 @@ class MyMedMarket extends Component {
                         action: "Countered"});
     }
 
-
-
     updateDForm = (event, result) => {
 
         const {name, id, checked} = result;
@@ -151,35 +153,34 @@ class MyMedMarket extends Component {
     renderRows() {
         var index=0;
         const { mym3prescriptions } = this.props.mym3prescriptions;
+        const { data }  = this.state
         const { Row, Cell } = Table;
+        console.log("component state data is ", data);
         
-        var filteredScripts = _.filter(mym3prescriptions, (prescription) => {            
-            var form = hex2ascii(prescription.form);
-            var dFormIndex = dFormArray.indexOf(form);
-            
-            return ((this.state.allStates || this.state.stateFilter.indexOf(hex2ascii(prescription.state)) > -1) &&
-                    (this.state.dFormFilter[dFormIndex]) )
-            });
+        //var filteredScripts = _.filter(mym3prescriptions, (prescription) => {            
+        var filteredScripts = _.filter(data, prescription => {            
+            var dFormIndex = dFormArray.indexOf(prescription.form);
 
-            _.map(filteredScripts, p => {
-                console.log("Price is ", p.price._hex)
-            })
+            return ((this.state.allStates || this.state.stateFilter.indexOf(prescription.state) > -1) &&
+                    (this.state.dFormFilter[dFormIndex]) )
+        });
+        console.log("Filteredscripts ", filteredScripts)
 
         return _.map(filteredScripts, prescription => {
-            var priceInDollars = parseInt(prescription.price._hex) /100
-            var dateInMs = parseInt(prescription.dateAdded._hex) * 1000;
-            var d = new Date(dateInMs);
-            var state = hex2ascii(prescription.state);
-            var form = hex2ascii(prescription.form);
-            var quantity = hex2ascii(prescription.quantity);
+    //        var priceInDollars = parseInt(prescription.price._hex) /100
+    //        var dateInMs = parseInt(prescription.dateAdded._hex) * 1000;
+    //        var d = new Date(dateInMs);
+    //        var state = hex2ascii(prescription.state);
+    //        var form = hex2ascii(prescription.form);
+     //       var quantity = hex2ascii(prescription.quantity);
 
             return (
                 <Row key={index++} >
                     <Cell>{prescription.formula}</Cell>
-                    <Cell>{form}<Icon name='caret right' />{quantity}</Cell>
-                    <Cell>{d.toLocaleDateString()} {d.toLocaleTimeString()}</Cell>
-                    <Cell>$ {priceInDollars.toFixed(2)}</Cell>
-                    <Cell>{state}</Cell>
+                    <Cell>{prescription.form}<Icon name='caret right' />{prescription.quantity}</Cell>
+                    <Cell>{prescription.dateAdded.toLocaleDateString()} {prescription.dateAdded.toLocaleTimeString()}</Cell>
+                    <Cell>$ {prescription.price}</Cell>
+                    <Cell>{prescription.state}</Cell>
                     <Cell>{ScriptStatus[prescription.status]}</Cell>
                     
                     <Cell>{ScriptStatus[prescription.status] === 'Authorized' ?
@@ -204,7 +205,7 @@ class MyMedMarket extends Component {
                 </Row>
             );
         });
-    }
+       }
 
     render() {
 
@@ -250,7 +251,7 @@ class MyMedMarket extends Component {
                     <Form.Checkbox id="df5" name="sublingual" onChange={this.updateDForm} checked={this.state.dFormFilter[5]} label="Sublingual"></Form.Checkbox>
                     <Form.Checkbox id="df6" name="tablet" onChange={this.updateDForm} checked={this.state.dFormFilter[6]} label="Tablet"></Form.Checkbox>
                     <Form.Checkbox id="df7" name="syrup" onChange={this.updateDForm} checked={this.state.dFormFilter[7]} label="Syrup"></Form.Checkbox>
-                    
+                    <Form.Checkbox id="df8" name="patch" onChange={this.updateDForm} checked={this.state.dFormFilter[8]} label="Patch"></Form.Checkbox>                  
                 </Form.Group>
 
                 </Accordion.Content>
@@ -291,8 +292,8 @@ class MyMedMarket extends Component {
                      ><b>Formula</b></Table.HeaderCell>
                      <Table.HeaderCell
                         width={2}
-                        sorted={column === 'form/qty' ? direction : null}
-                        onClick={this.handleSort('form/qty')}                                      
+                        sorted={column === 'form' ? direction : null}
+                        onClick={this.handleSort('form')}                                      
                      ><b>Form/Qty</b></Table.HeaderCell>
                      <Table.HeaderCell
                         width={2}
@@ -338,10 +339,29 @@ class MyMedMarket extends Component {
 
 
 function mapStateToProps({mym3prescriptions={}, isLoading=false}) {
-    
+    var displayData = [];
+    console.log("Calling mapStateToProps()")
+    if(mym3prescriptions) {
+        _.forEach(mym3prescriptions.mym3prescriptions, function(record) 
+        {   let r = {};
+            r.formula = record.formula;
+            r.form = hex2ascii(record.form);
+            r.quantity = hex2ascii(record.quantity);
+            let dateInMs = parseInt(record.dateAdded._hex, 16) * 1000;
+            r.dateAdded= new Date(dateInMs);
+            r.status = record.status;
+            let price = parseInt(record.price._hex, 16) / 100;
+            r.price = price.toFixed(2);
+            r.priceCounterOffersCount = record.priceCounterOffersCount;
+            r.scriptId = record.scriptId;
+            r.state = hex2ascii(record.state);
+            displayData.push(r);
+        });
+    }
+
     
     return{
-        mym3prescriptions: mym3prescriptions
+        mym3prescriptions: displayData
     }
 }
 
