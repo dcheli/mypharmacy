@@ -28,28 +28,31 @@ class MyM3DashBoard extends Component {
     }
 
     static getDerivedStateFromProps(props, state) {
-        return {data: props.mym3prescriptions.mym3prescriptions };
+        console.log("props in are ", props)
+        if(state.data && state.data.length == 0) {
+            return {data: props.mym3prescriptions };
+        }
+        return null;
     }
-
+    
     handleSort = (clickedColumn) => () => {
 
-        const {column, data, direction } = this.state;
+        const {column, data, direction } = this.state; 
 
         if (column !== clickedColumn) {
             this.setState({
               column: clickedColumn,
-              data: _.sortBy(data, [clickedColumn]),
+              data: _.orderBy(data, [clickedColumn], ['asc']),
               direction: 'ascending',
             })
-      
             return
-          }
-          console.log("Data is ", data)
-          this.setState({
-            data: data.reverse(),
+        }
+
+        this.setState({
+            column: null,
+            data: _.orderBy(data, [clickedColumn], ['desc']),
             direction: direction === 'ascending' ? 'descending' : 'ascending',
-          })
-        
+        })
     }
 
     handleReleaseButton = (e) => {
@@ -102,25 +105,17 @@ class MyM3DashBoard extends Component {
 
     renderRows() {
         var index=0;
-        const { mym3prescriptions } = this.props.mym3prescriptions;
+        const {data} = this.state
+        //const { mym3prescriptions } = this.props;
         const { Row, Cell } = Table;
-        _.map(mym3prescriptions, p => {
-            console.log("Price from BC is ", parseInt(p.price._hex));
-            console.log("Date from BC is ", p.dateAdded);   
-        });
 
-        return _.map(mym3prescriptions, prescription => {
-            var priceInDollars = parseInt(prescription.price._hex,16) /100
-            var dateInMs = parseInt(prescription.dateAdded._hex,16) * 1000;
-            var d = new Date(dateInMs);
-            var form = hex2ascii(prescription.form);
-            var quantity = hex2ascii(prescription.quantity);
+        return _.map(data, prescription => {           
             return (
                 <Row key={index++} >
                     <Cell>{prescription.formula}</Cell>
-                    <Cell>{form}<Icon name='caret right' />{quantity}</Cell>
-                    <Cell>{d.toLocaleDateString()} {d.toLocaleTimeString()}</Cell>
-                    <Cell>$ {priceInDollars.toFixed(2)}</Cell>
+                    <Cell>{prescription.form}<Icon name='caret right' />{prescription.quantity}</Cell>
+                    <Cell>{prescription.dateAdded.toLocaleDateString()} {prescription.dateAdded.toLocaleTimeString()}</Cell>
+                    <Cell>$ {prescription.price}</Cell>
                     <Cell>{ScriptStatus[prescription.status]}</Cell>
                     <Cell>{ScriptStatus[prescription.status] === 'Claimed' ?
                     <div>
@@ -145,6 +140,7 @@ class MyM3DashBoard extends Component {
                             <Loader>Loading Prescriptions</Loader>
                         </Dimmer>
                         </Segment></div>);
+
         const {column, direction } = this.state;
         return (
             <div>
@@ -203,17 +199,32 @@ class MyM3DashBoard extends Component {
                 confirmButton='Complete'
                 onCancel={this.handleCompleteCancel}
             />
-
-
             </div>
-
         );
     }
 };
 
-function mapStateToProps({mym3prescriptions={}, isLoading=false}) {
+function mapStateToProps({mym3prescriptions={}}) {
+    var displayData = [];
+    if(mym3prescriptions) {
+        _.forEach(mym3prescriptions.mym3prescriptions, function(record) 
+        {   let r = {};
+            r.formula = record.formula;
+            r.form = hex2ascii(record.form);
+            r.quantity = hex2ascii(record.quantity);
+            let dateInMs = parseInt(record.dateAdded._hex, 16) * 1000;
+            r.dateAdded= new Date(dateInMs);
+            r.status = record.status;
+            let price = parseInt(record.price._hex, 16) / 100;
+            r.price = price.toFixed(2);
+            r.priceCounterOffersCount = record.priceCounterOffersCount;
+            r.scriptId = record.scriptId;
+            displayData.push(r);
+        });
+    }
+
     return{
-        mym3prescriptions: mym3prescriptions
+        mym3prescriptions: displayData,
     }
 }
 
