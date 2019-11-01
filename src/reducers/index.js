@@ -4,6 +4,7 @@ import AllergiesReducer from './allergies';
 import MedicationsReducer from './medications';
 import ProvidersReducer from './providers';
 import MyM3Prescriptions from './mym3prescriptions';
+import M3Prescriptions from './m3prescriptions';
 import PatientShares from './patientshares';
 
 const rootReducer = combineReducers({
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
   medications: MedicationsReducer,
   providers: ProvidersReducer,
   mym3prescriptions: MyM3Prescriptions,
+  m3prescriptions: M3Prescriptions,
   patientShares: PatientShares
 });
 

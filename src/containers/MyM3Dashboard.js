@@ -28,7 +28,7 @@ class MyM3DashBoard extends Component {
     }
 
     static getDerivedStateFromProps(props, state) {
-        console.log("props in are ", props)
+        console.log("calling getDerivedStateFromProps()")
         if(state.data && state.data.length == 0) {
             return {data: props.mym3prescriptions };
         }
@@ -38,14 +38,13 @@ class MyM3DashBoard extends Component {
     handleSort = (clickedColumn) => () => {
 
         const {column, data, direction } = this.state; 
-
         if (column !== clickedColumn) {
             this.setState({
               column: clickedColumn,
               data: _.orderBy(data, [clickedColumn], ['asc']),
               direction: 'ascending',
             })
-            return
+            return;
         }
 
         this.setState({
@@ -82,8 +81,6 @@ class MyM3DashBoard extends Component {
         this.setState({openCompleteConfirm: false});
     }
 
-
-
     handleReleaseConfirm = () => {
         this.setState({openReleaseConfirm: false});
         
@@ -102,14 +99,12 @@ class MyM3DashBoard extends Component {
         this.setState({openReleaseConfirm: false});
     }
 
-
     renderRows() {
         var index=0;
         const {data} = this.state
-        //const { mym3prescriptions } = this.props;
         const { Row, Cell } = Table;
 
-        return _.map(data, prescription => {           
+        return _.map(data, prescription => {   
             return (
                 <Row key={index++} >
                     <Cell>{prescription.formula}</Cell>
@@ -145,7 +140,7 @@ class MyM3DashBoard extends Component {
         return (
             <div>
                 <Segment  raised style={{ backgroundColor : '#D3D3D3' }}>
-                <h3>MyMedMarketplace Dashboard</h3></Segment>
+                <h3>MyMedMarket Dashboard</h3></Segment>
                 <Table sortable>
                     <Table.Header>
                         <Table.Row>
@@ -156,8 +151,8 @@ class MyM3DashBoard extends Component {
                      ><b>Formula</b></Table.HeaderCell>
                      <Table.HeaderCell
                         width={2}
-                        sorted={column === 'form/qty' ? direction : null}
-                        onClick={this.handleSort('form/qty')}                                      
+                        sorted={column === 'form' ? direction : null}
+                        onClick={this.handleSort('form')}                                      
                      ><b>Form/Qty</b></Table.HeaderCell>
                      <Table.HeaderCell
                         width={2}
@@ -205,8 +200,9 @@ class MyM3DashBoard extends Component {
 };
 
 function mapStateToProps({mym3prescriptions={}}) {
-    var displayData = [];
+    let displayData = [];
     if(mym3prescriptions) {
+        console.log("My scripts are ", mym3prescriptions.mym3prescriptions)
         _.forEach(mym3prescriptions.mym3prescriptions, function(record) 
         {   let r = {};
             r.formula = record.formula;
@@ -219,6 +215,7 @@ function mapStateToProps({mym3prescriptions={}}) {
             r.price = price.toFixed(2);
             r.priceCounterOffersCount = record.priceCounterOffersCount;
             r.scriptId = record.scriptId;
+            r.state = hex2ascii(record.state);
             displayData.push(r);
         });
     }

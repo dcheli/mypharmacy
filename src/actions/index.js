@@ -67,7 +67,6 @@ function setProviderDetails(data) {
 export const fetchM3Prescriptions = () => (dispatch) => {
     axios.get(Constants.ROOT_URL + '/api/m3/m3scripts')
         .then (({data}) => {
-            console.log("Data length is ", data.length)
             if(data.length === 0)
                 dispatch({ type: Constants.NOT_FOUND })
             dispatch(setM3PrescriptionDetails(data));
@@ -76,24 +75,27 @@ export const fetchM3Prescriptions = () => (dispatch) => {
 
 
 function setM3PrescriptionDetails(data) {
-    console.log("M3 data is ", data);
     console.log("Type is ", Constants.SET_M3PRESCRIPTION_DETAILS);
-    
     return {
         type: Constants.SET_M3PRESCRIPTION_DETAILS,
         payload: data
     };
 };
 
-
+function setMyM3PrescriptionDetails(data) {
+    console.log("Type is ", Constants.SET_MYM3PRESCRIPTION_DETAILS);  
+    return {
+        type: Constants.SET_MYM3PRESCRIPTION_DETAILS,
+        payload: data
+    };
+};
 
 export const fetchMyM3Prescriptions = () => (dispatch) => {
     axios.get(Constants.ROOT_URL + '/api/m3/' +Constants.ETH_ADDRESS + '/pharmacyscripts')
         .then (({data}) => {
-            console.log("data is ", data);
             if(data.length === 0)
                 dispatch({ type: Constants.NOT_FOUND })
-            dispatch(setM3PrescriptionDetails(data));
+            dispatch(setMyM3PrescriptionDetails(data));
         });
 };
 
