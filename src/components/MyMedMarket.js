@@ -12,12 +12,11 @@ import states from '../../static/data/stateOptions';
 const ScriptStatus = [ "Authorized", "Cancelled", "Claimed", "Countered", "Released", "Completed"];
 // this needs to be refactored when you are smarter; it is tightly coupled to dFormFilter
 const dFormArray = ["Capsule","Cream" ,"Lotion","OintmentGel","Solution","Sublingual","Tablet", "Syrup", "Patch"];
-var filteredData = [];
 
 class MyMedMarket extends Component {
 
-
     constructor(props) {
+        console.log("constructor()")
         super(props);
         this.state = { 
             tClassFilter : [false, true, false, false, true, true, false, true, false, false, false, true, false, true, false, false, false, false ],
@@ -37,28 +36,37 @@ class MyMedMarket extends Component {
     }
 
     componentDidMount() {
+        console.log("componentDidMount()");
         this.props.fetchM3Prescriptions();
     }
 
     static getDerivedStateFromProps(props, state) {
-         console.log("calling getDerivedStateFromProps()")
-        if(state.data && state.data.length == 0) {
-            return {data: props.mym3prescriptions };
+  
+        if(state.data && state.data.length == 0){
+            var filteredScripts = _.filter(props.m3prescriptions, prescription => {            
+                var dFormIndex = dFormArray.indexOf(prescription.form);
+    
+                return ((state.allStates || state.stateFilter.indexOf(prescription.state) > -1) &&
+                        (state.dFormFilter[dFormIndex]) )
+            });
+
+            return {data: filteredScripts };
         }
+
         return null;
     }
 
     handleSort = (clickedColumn) => () => {
-
-        const {column, data, direction } = this.state; 
-
+        console.log("handle sort")
+        
+        const {column, data, direction } = this.state;       
         if (column !== clickedColumn) {
             this.setState({
               column: clickedColumn,
               data: _.orderBy(data, [clickedColumn], ['asc']),
               direction: 'ascending',
             })
-            return
+            return;
         }
 
         this.setState({
@@ -79,7 +87,8 @@ class MyMedMarket extends Component {
     handleStateChange = (event, result) => {
         const {name, value} = result;
         this.setState({
-            stateFilter: value
+            stateFilter: value,
+            data:[]
         });
 
     }
@@ -87,7 +96,8 @@ class MyMedMarket extends Component {
     handleAllStates = (event, result) => {
         const { checked } = result;
         this.setState({
-            allStates: checked
+            allStates: checked,
+            data:[]
         });
     }
 
@@ -141,39 +151,22 @@ class MyMedMarket extends Component {
     }
 
     updateDForm = (event, result) => {
-
-        const {name, id, checked} = result;
+        const {id, checked} = result;
         var dfFilter = this.state.dFormFilter;
         dfFilter[parseInt(id.substring(2))] = checked;
         this.setState({
-           dFormFilter: dfFilter 
+           dFormFilter: dfFilter,
+           data: []
         });
     }
 
     renderRows() {
+        console.log("renderRows()")
         var index=0;
-        const { mym3prescriptions } = this.props.mym3prescriptions;
-        const { data }  = this.state
+        const  { data }  = this.state
         const { Row, Cell } = Table;
-        console.log("component state data is ", data);
-        
-        //var filteredScripts = _.filter(mym3prescriptions, (prescription) => {            
-        var filteredScripts = _.filter(data, prescription => {            
-            var dFormIndex = dFormArray.indexOf(prescription.form);
-
-            return ((this.state.allStates || this.state.stateFilter.indexOf(prescription.state) > -1) &&
-                    (this.state.dFormFilter[dFormIndex]) )
-        });
-        console.log("Filteredscripts ", filteredScripts)
-
-        return _.map(filteredScripts, prescription => {
-    //        var priceInDollars = parseInt(prescription.price._hex) /100
-    //        var dateInMs = parseInt(prescription.dateAdded._hex) * 1000;
-    //        var d = new Date(dateInMs);
-    //        var state = hex2ascii(prescription.state);
-    //        var form = hex2ascii(prescription.form);
-     //       var quantity = hex2ascii(prescription.quantity);
-
+                  
+        return _.map(data, prescription => {
             return (
                 <Row key={index++} >
                     <Cell>{prescription.formula}</Cell>
@@ -208,9 +201,9 @@ class MyMedMarket extends Component {
        }
 
     render() {
-
-        if(this.props.mym3prescriptions === undefined ||
-            _.isEmpty(this.props.mym3prescriptions))
+        console.log("render()")
+        if(this.props.m3prescriptions === undefined ||
+            _.isEmpty(this.props.m3prescriptions))
             return(<div><Segment size='large'>
                     <h3>MyMedMarket</h3>
                         <Dimmer active inverted>
@@ -232,7 +225,7 @@ class MyMedMarket extends Component {
                 : ""}
             <Form>
             <Segment  raised style={{ backgroundColor : '#D3D3D3' }}>
-                <h3>MyMedMarketplace Filters</h3></Segment>
+                <h3>MyMedMarket Filters</h3></Segment>
 
             <Accordion fluid styled>
 
@@ -279,7 +272,7 @@ class MyMedMarket extends Component {
             <Table sortable>
            <Table.Header>
                  <Table.Row>
-                     <Table.HeaderCell colSpan='7' style={{ backgroundColor : '#D3D3D3' }} ><h3>MyMedMarketplace Prescriptions</h3></Table.HeaderCell>
+                     <Table.HeaderCell colSpan='7' style={{ backgroundColor : '#D3D3D3' }} ><h3>MyMedMarket Prescriptions</h3></Table.HeaderCell>
                  </Table.Row>
              </Table.Header>
              </Table>
@@ -338,11 +331,12 @@ class MyMedMarket extends Component {
 }
 
 
-function mapStateToProps({mym3prescriptions={}, isLoading=false}) {
-    var displayData = [];
-    console.log("Calling mapStateToProps()")
-    if(mym3prescriptions) {
-        _.forEach(mym3prescriptions.mym3prescriptions, function(record) 
+function mapStateToProps({m3prescriptions={}, isLoading=false}) {
+    console.log("mapStateToProps()");
+    let displayData = [];
+    
+    if(m3prescriptions) {
+        _.forEach(m3prescriptions.m3prescriptions, function(record) 
         {   let r = {};
             r.formula = record.formula;
             r.form = hex2ascii(record.form);
@@ -359,9 +353,8 @@ function mapStateToProps({mym3prescriptions={}, isLoading=false}) {
         });
     }
 
-    
     return{
-        mym3prescriptions: displayData
+        m3prescriptions: displayData,
     }
 }
 

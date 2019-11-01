@@ -5,11 +5,11 @@ import Constants from '../constants';
 export default function(state = {}, action) {
     console.log("Action type is ", action.type);
     switch (action.type) {
-        case Constants.SET_MYM3PRESCRIPTION_DETAILS:
-            console.log(Constants.SET_MYM3PRESCRIPTION_DETAILS);
+        case Constants.SET_M3PRESCRIPTION_DETAILS:
+            console.log(Constants.SET_M3PRESCRIPTION_DETAILS);
         
             return { 
-                    mym3prescriptions: action.payload
+                    m3prescriptions: action.payload
             };
                   
         case  Constants.SET_M3PRESCRIPTION_DETAILS:
