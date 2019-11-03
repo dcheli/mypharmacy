@@ -127,8 +127,9 @@ class MyM3DashBoard extends Component {
 
     }
     render() {
-        if(this.props.mym3prescriptions === undefined ||
-            _.isEmpty(this.props.mym3prescriptions))
+        if(this.props.mym3prescriptions === undefined //||
+           // _.isEmpty(this.props.mym3prescriptions)
+           )
             return(<div><Segment size='large'>
                     <h3>MyMedMarket</h3>
                         <Dimmer active inverted>

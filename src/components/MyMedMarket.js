@@ -11,7 +11,7 @@ import CounterModal from '../components/CounterModal';
 import states from '../../static/data/stateOptions';
 const ScriptStatus = [ "Authorized", "Cancelled", "Claimed", "Countered", "Released", "Completed"];
 // this needs to be refactored when you are smarter; it is tightly coupled to dFormFilter
-const dFormArray = ["Capsule","Cream" ,"Lotion","OintmentGel","Solution","Sublingual","Tablet", "Syrup", "Patch"];
+const dFormArray = ["Capsule","Cream" ,"Lotion","Ointment","Solution","Sublingual","Tablet", "Syrup", "Gel"];
 
 class MyMedMarket extends Component {
 
@@ -202,8 +202,9 @@ class MyMedMarket extends Component {
 
     render() {
         console.log("render()")
-        if(this.props.m3prescriptions === undefined ||
-            _.isEmpty(this.props.m3prescriptions))
+        if(this.props.m3prescriptions === undefined 
+            //||  _.isEmpty(this.props.m3prescriptions)
+            )
             return(<div><Segment size='large'>
                     <h3>MyMedMarket</h3>
                         <Dimmer active inverted>
