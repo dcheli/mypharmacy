@@ -55,8 +55,8 @@ class HealthRecords extends Component {
     }
    
     render() {
-        if(this.props.patientShares === undefined ||
-            _.isEmpty(this.props.patientShares))
+        if(this.props.patientShares === undefined) //||
+          //  _.isEmpty(this.props.patientShares))
             return(<div><Segment size='large'>
                     <h3>Health Records</h3>
                         <Dimmer active inverted>
