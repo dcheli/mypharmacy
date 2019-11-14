@@ -108,7 +108,7 @@ class MyM3DashBoard extends Component {
             return (
                 <Row key={index++} >
                     <Cell>{prescription.formula}</Cell>
-                    <Cell>{prescription.form}<Icon name='caret right' />{prescription.quantity}</Cell>
+                    <Cell>{prescription.form}<Icon name='caret right' />{prescription.daySupply}</Cell>
                     <Cell>{prescription.dateAdded.toLocaleDateString()} {prescription.dateAdded.toLocaleTimeString()}</Cell>
                     <Cell>$ {prescription.price}</Cell>
                     <Cell>{ScriptStatus[prescription.status]}</Cell>
@@ -154,7 +154,7 @@ class MyM3DashBoard extends Component {
                         width={2}
                         sorted={column === 'form' ? direction : null}
                         onClick={this.handleSort('form')}                                      
-                     ><b>Form/Qty</b></Table.HeaderCell>
+                     ><b>Form/Day Supply</b></Table.HeaderCell>
                      <Table.HeaderCell
                         width={2}
                         sorted={column === 'dateAdded' ? direction : null}
@@ -209,6 +209,7 @@ function mapStateToProps({mym3prescriptions={}}) {
             r.formula = record.formula;
             r.form = hex2ascii(record.form);
             r.quantity = hex2ascii(record.quantity);
+            r.daySupply = hex2ascii(record.daySupply);
             let dateInMs = parseInt(record.dateAdded._hex, 16) * 1000;
             r.dateAdded= new Date(dateInMs);
             r.status = record.status;
